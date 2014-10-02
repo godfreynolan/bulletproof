@@ -1,0 +1,2176 @@
+_____________________________________________________________________
++ Program class: com/example/android/sip/IncomingCallReceiver
+  Superclass:    android/content/BroadcastReceiver
+  Major version: 0x32
+  Minor version: 0x0
+  Access flags:  0x21
+    = public class com.example.android.sip.IncomingCallReceiver extends android.content.BroadcastReceiver
+
+Interfaces (count = 0):
+
+Constant Pool (count = 69):
+  + Class [android/content/BroadcastReceiver]
+  + Class [android/content/Context]
+  + Class [android/content/Intent]
+  + Class [android/net/sip/SipAudioCall]
+  + Class [android/net/sip/SipAudioCall$Listener]
+  + Class [android/net/sip/SipManager]
+  + Class [com/example/android/sip/IncomingCallReceiver]
+  + Class [com/example/android/sip/WalkieTalkieActivity]
+  + Class [com/example/android/sip/a]
+  + Class [java/lang/Exception]
+  + Fieldref [com/example/android/sip/WalkieTalkieActivity.b Landroid/net/sip/SipManager;]
+  + Fieldref [com/example/android/sip/WalkieTalkieActivity.d Landroid/net/sip/SipAudioCall;]
+  + Methodref [android/content/BroadcastReceiver.<init> ()V]
+  + Methodref [android/net/sip/SipAudioCall.answerCall (I)V]
+  + Methodref [android/net/sip/SipAudioCall.close ()V]
+  + Methodref [android/net/sip/SipAudioCall.isMuted ()Z]
+  + Methodref [android/net/sip/SipAudioCall.setSpeakerMode (Z)V]
+  + Methodref [android/net/sip/SipAudioCall.startAudio ()V]
+  + Methodref [android/net/sip/SipAudioCall.toggleMute ()V]
+  + Methodref [android/net/sip/SipManager.takeAudioCall (Landroid/content/Intent;Landroid/net/sip/SipAudioCall$Listener;)Landroid/net/sip/SipAudioCall;]
+  + Methodref [com/example/android/sip/WalkieTalkieActivity.a (Landroid/net/sip/SipAudioCall;)V]
+  + Methodref [com/example/android/sip/a.<init> (Lcom/example/android/sip/IncomingCallReceiver;)V]
+  + NameAndType [<init> ()V]
+  + NameAndType [<init> (Lcom/example/android/sip/IncomingCallReceiver;)V]
+  + NameAndType [a (Landroid/net/sip/SipAudioCall;)V]
+  + NameAndType [answerCall (I)V]
+  + NameAndType [b Landroid/net/sip/SipManager;]
+  + NameAndType [close ()V]
+  + NameAndType [d Landroid/net/sip/SipAudioCall;]
+  + NameAndType [isMuted ()Z]
+  + NameAndType [setSpeakerMode (Z)V]
+  + NameAndType [startAudio ()V]
+  + NameAndType [takeAudioCall (Landroid/content/Intent;Landroid/net/sip/SipAudioCall$Listener;)Landroid/net/sip/SipAudioCall;]
+  + NameAndType [toggleMute ()V]
+  + Utf8 [()V]
+  + Utf8 [()Z]
+  + Utf8 [(I)V]
+  + Utf8 [(Landroid/content/Context;Landroid/content/Intent;)V]
+  + Utf8 [(Landroid/content/Intent;Landroid/net/sip/SipAudioCall$Listener;)Landroid/net/sip/SipAudioCall;]
+  + Utf8 [(Landroid/net/sip/SipAudioCall;)V]
+  + Utf8 [(Lcom/example/android/sip/IncomingCallReceiver;)V]
+  + Utf8 [(Z)V]
+  + Utf8 [<init>]
+  + Utf8 [Code]
+  + Utf8 [Landroid/net/sip/SipAudioCall;]
+  + Utf8 [Landroid/net/sip/SipManager;]
+  + Utf8 [StackMapTable]
+  + Utf8 [a]
+  + Utf8 [android/content/BroadcastReceiver]
+  + Utf8 [android/content/Context]
+  + Utf8 [android/content/Intent]
+  + Utf8 [android/net/sip/SipAudioCall]
+  + Utf8 [android/net/sip/SipAudioCall$Listener]
+  + Utf8 [android/net/sip/SipManager]
+  + Utf8 [answerCall]
+  + Utf8 [b]
+  + Utf8 [close]
+  + Utf8 [com/example/android/sip/IncomingCallReceiver]
+  + Utf8 [com/example/android/sip/WalkieTalkieActivity]
+  + Utf8 [com/example/android/sip/a]
+  + Utf8 [d]
+  + Utf8 [isMuted]
+  + Utf8 [java/lang/Exception]
+  + Utf8 [onReceive]
+  + Utf8 [setSpeakerMode]
+  + Utf8 [startAudio]
+  + Utf8 [takeAudioCall]
+  + Utf8 [toggleMute]
+
+Fields (count = 0):
+
+Methods (count = 2):
+  - Method:       <init>()V
+    Access flags: 0x1
+      = public IncomingCallReceiver()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 5, locals = 1, stack = 1):
+      [0] aload_0 v0
+      [1] invokespecial #13
+        + Methodref [android/content/BroadcastReceiver.<init> ()V]
+      [4] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       onReceive(Landroid/content/Context;Landroid/content/Intent;)V
+    Access flags: 0x1
+      = public void onReceive(android.content.Context,android.content.Intent)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 82, locals = 6, stack = 3):
+      [0] aconst_null
+      [1] astore_3 v3
+      [2] new #9
+        + Class [com/example/android/sip/a]
+      [5] dup
+      [6] aload_0 v0
+      [7] invokespecial #22
+        + Methodref [com/example/android/sip/a.<init> (Lcom/example/android/sip/IncomingCallReceiver;)V]
+      [10] astore v4
+      [12] aload_1 v1
+      [13] checkcast #8
+        + Class [com/example/android/sip/WalkieTalkieActivity]
+      [16] astore v5
+      [18] aload v5
+      [20] getfield #11
+        + Fieldref [com/example/android/sip/WalkieTalkieActivity.b Landroid/net/sip/SipManager;]
+      [23] aload_2 v2
+      [24] aload v4
+      [26] invokevirtual #20
+        + Methodref [android/net/sip/SipManager.takeAudioCall (Landroid/content/Intent;Landroid/net/sip/SipAudioCall$Listener;)Landroid/net/sip/SipAudioCall;]
+      [29] astore_3 v3
+      [30] aload_3 v3
+      [31] bipush 30
+      [33] invokevirtual #14
+        + Methodref [android/net/sip/SipAudioCall.answerCall (I)V]
+      [36] aload_3 v3
+      [37] invokevirtual #18
+        + Methodref [android/net/sip/SipAudioCall.startAudio ()V]
+      [40] aload_3 v3
+      [41] iconst_1
+      [42] invokevirtual #17
+        + Methodref [android/net/sip/SipAudioCall.setSpeakerMode (Z)V]
+      [45] aload_3 v3
+      [46] invokevirtual #16
+        + Methodref [android/net/sip/SipAudioCall.isMuted ()Z]
+      [49] ifeq +7 (target=56)
+      [52] aload_3 v3
+      [53] invokevirtual #19
+        + Methodref [android/net/sip/SipAudioCall.toggleMute ()V]
+      [56] aload v5
+      [58] aload_3 v3
+      [59] putfield #12
+        + Fieldref [com/example/android/sip/WalkieTalkieActivity.d Landroid/net/sip/SipAudioCall;]
+      [62] aload v5
+      [64] aload_3 v3
+      [65] invokevirtual #21
+        + Methodref [com/example/android/sip/WalkieTalkieActivity.a (Landroid/net/sip/SipAudioCall;)V]
+      [68] goto +13 (target=81)
+      [71] astore v4
+      [73] aload_3 v3
+      [74] ifnull +7 (target=81)
+      [77] aload_3 v3
+      [78] invokevirtual #15
+        + Methodref [android/net/sip/SipAudioCall.close ()V]
+      [81] return
+      Code attribute exceptions (count = 1):
+      - ExceptionInfo (2 -> 68: 71):
+      + Class [java/lang/Exception]
+      Code attribute attributes (attribute count = 1):
+      + Stack map table attribute (count = 3):
+        - [56] Var: ...[a:android/net/sip/SipAudioCall][a:android/net/sip/SipAudioCall$Listener][a:com/example/android/sip/WalkieTalkieActivity], Stack: (empty)
+        - [71] Var: [a:com/example/android/sip/IncomingCallReceiver][a:android/content/Context][a:android/content/Intent][a:android/net/sip/SipAudioCall], Stack: [a:java/lang/Exception]
+        - [81] Var: ..., Stack: (empty)
+
+Class file attributes (count = 0):
+
+_____________________________________________________________________
++ Program class: com/example/android/sip/a
+  Superclass:    android/net/sip/SipAudioCall$Listener
+  Major version: 0x32
+  Minor version: 0x0
+  Access flags:  0x20
+    = class com.example.android.sip.a extends android.net.sip.SipAudioCall$Listener
+
+Interfaces (count = 0):
+
+Constant Pool (count = 29):
+  + Class [android/net/sip/SipAudioCall]
+  + Class [android/net/sip/SipAudioCall$Listener]
+  + Class [com/example/android/sip/a]
+  + Class [java/lang/Exception]
+  + Fieldref [com/example/android/sip/a.a Lcom/example/android/sip/IncomingCallReceiver;]
+  + Methodref [android/net/sip/SipAudioCall.answerCall (I)V]
+  + Methodref [android/net/sip/SipAudioCall$Listener.<init> ()V]
+  + Methodref [java/lang/Exception.printStackTrace ()V]
+  + NameAndType [<init> ()V]
+  + NameAndType [a Lcom/example/android/sip/IncomingCallReceiver;]
+  + NameAndType [answerCall (I)V]
+  + NameAndType [printStackTrace ()V]
+  + Utf8 [()V]
+  + Utf8 [(I)V]
+  + Utf8 [(Landroid/net/sip/SipAudioCall;Landroid/net/sip/SipProfile;)V]
+  + Utf8 [(Lcom/example/android/sip/IncomingCallReceiver;)V]
+  + Utf8 [<init>]
+  + Utf8 [Code]
+  + Utf8 [Lcom/example/android/sip/IncomingCallReceiver;]
+  + Utf8 [StackMapTable]
+  + Utf8 [a]
+  + Utf8 [android/net/sip/SipAudioCall]
+  + Utf8 [android/net/sip/SipAudioCall$Listener]
+  + Utf8 [answerCall]
+  + Utf8 [com/example/android/sip/a]
+  + Utf8 [java/lang/Exception]
+  + Utf8 [onRinging]
+  + Utf8 [printStackTrace]
+
+Fields (count = 1):
+  + Field:        a Lcom/example/android/sip/IncomingCallReceiver;
+    Access flags: 0x1010
+      = final synthetic com.example.android.sip.IncomingCallReceiver a
+
+Methods (count = 2):
+  - Method:       <init>(Lcom/example/android/sip/IncomingCallReceiver;)V
+    Access flags: 0x0
+      = a(com.example.android.sip.IncomingCallReceiver)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 10, locals = 2, stack = 2):
+      [0] aload_0 v0
+      [1] aload_1 v1
+      [2] putfield #5
+        + Fieldref [com/example/android/sip/a.a Lcom/example/android/sip/IncomingCallReceiver;]
+      [5] aload_0 v0
+      [6] invokespecial #7
+        + Methodref [android/net/sip/SipAudioCall$Listener.<init> ()V]
+      [9] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       onRinging(Landroid/net/sip/SipAudioCall;Landroid/net/sip/SipProfile;)V
+    Access flags: 0x1
+      = public void onRinging(android.net.sip.SipAudioCall,android.net.sip.SipProfile)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 15, locals = 4, stack = 2):
+      [0] aload_1 v1
+      [1] bipush 30
+      [3] invokevirtual #6
+        + Methodref [android/net/sip/SipAudioCall.answerCall (I)V]
+      [6] goto +8 (target=14)
+      [9] astore_3 v3
+      [10] aload_3 v3
+      [11] invokevirtual #8
+        + Methodref [java/lang/Exception.printStackTrace ()V]
+      [14] return
+      Code attribute exceptions (count = 1):
+      - ExceptionInfo (0 -> 6: 9):
+      + Class [java/lang/Exception]
+      Code attribute attributes (attribute count = 1):
+      + Stack map table attribute (count = 2):
+        - [9] Var: ..., Stack: [a:java/lang/Exception]
+        - [14] Var: ..., Stack: (empty)
+
+Class file attributes (count = 0):
+
+_____________________________________________________________________
++ Program class: com/example/android/sip/SipSettings
+  Superclass:    android/preference/PreferenceActivity
+  Major version: 0x32
+  Minor version: 0x0
+  Access flags:  0x21
+    = public class com.example.android.sip.SipSettings extends android.preference.PreferenceActivity
+
+Interfaces (count = 0):
+
+Constant Pool (count = 19):
+  + Integer [2130968576]
+  + Class [android/preference/PreferenceActivity]
+  + Class [com/example/android/sip/SipSettings]
+  + Methodref [android/preference/PreferenceActivity.<init> ()V]
+  + Methodref [android/preference/PreferenceActivity.onCreate (Landroid/os/Bundle;)V]
+  + Methodref [com/example/android/sip/SipSettings.addPreferencesFromResource (I)V]
+  + NameAndType [<init> ()V]
+  + NameAndType [addPreferencesFromResource (I)V]
+  + NameAndType [onCreate (Landroid/os/Bundle;)V]
+  + Utf8 [()V]
+  + Utf8 [(I)V]
+  + Utf8 [(Landroid/os/Bundle;)V]
+  + Utf8 [<init>]
+  + Utf8 [Code]
+  + Utf8 [addPreferencesFromResource]
+  + Utf8 [android/preference/PreferenceActivity]
+  + Utf8 [com/example/android/sip/SipSettings]
+  + Utf8 [onCreate]
+
+Fields (count = 0):
+
+Methods (count = 2):
+  - Method:       <init>()V
+    Access flags: 0x1
+      = public SipSettings()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 5, locals = 1, stack = 1):
+      [0] aload_0 v0
+      [1] invokespecial #4
+        + Methodref [android/preference/PreferenceActivity.<init> ()V]
+      [4] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       onCreate(Landroid/os/Bundle;)V
+    Access flags: 0x1
+      = public void onCreate(android.os.Bundle)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 12, locals = 2, stack = 2):
+      [0] aload_0 v0
+      [1] aload_1 v1
+      [2] invokespecial #5
+        + Methodref [android/preference/PreferenceActivity.onCreate (Landroid/os/Bundle;)V]
+      [5] aload_0 v0
+      [6] ldc #1
+        + Integer [2130968576]
+      [8] invokevirtual #6
+        + Methodref [com/example/android/sip/SipSettings.addPreferencesFromResource (I)V]
+      [11] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+
+Class file attributes (count = 0):
+
+_____________________________________________________________________
++ Program class: com/example/android/sip/WalkieTalkieActivity
+  Superclass:    android/app/Activity
+  Major version: 0x32
+  Minor version: 0x0
+  Access flags:  0x21
+    = public class com.example.android.sip.WalkieTalkieActivity extends android.app.Activity
+
+Interfaces (count = 1):
+  + Class [android/view/View$OnTouchListener]
+
+Constant Pool (count = 375):
+  + Integer [17039360]
+  + Integer [17039370]
+  + Integer [2130903040]
+  + Integer [2130903041]
+  + Integer [2131099652]
+  + String []
+  + String [@]
+  + String [Call Someone.]
+  + String [Call someone]
+  + String [Connection Error.]
+  + String [Connection error.]
+  + String [Edit your SIP Info.]
+  + String [End Current Call.]
+  + String [Error ending call.]
+  + String [Error when trying to close manager.]
+  + String [Failed to close local profile.]
+  + String [Please update your SIP Account Settings.]
+  + String [WalkieTalkieActivity/InitiateCall]
+  + String [WalkieTalkieActivity/onDestroy]
+  + String [WalkieTalkieActivity/onOptionsItemSelected]
+  + String [android.SipDemo.INCOMING_CALL]
+  + String [domainPref]
+  + String [namePref]
+  + String [passPref]
+  + Class [android/app/Activity]
+  + Class [android/app/AlertDialog$Builder]
+  + Class [android/app/PendingIntent]
+  + Class [android/content/Intent]
+  + Class [android/content/IntentFilter]
+  + Class [android/content/SharedPreferences]
+  + Class [android/net/sip/SipAudioCall]
+  + Class [android/net/sip/SipException]
+  + Class [android/net/sip/SipManager]
+  + Class [android/net/sip/SipProfile]
+  + Class [android/net/sip/SipProfile$Builder]
+  + Class [android/preference/PreferenceManager]
+  + Class [android/util/Log]
+  + Class [android/view/LayoutInflater]
+  + Class [android/view/Menu]
+  + Class [android/view/MenuItem]
+  + Class [android/view/MotionEvent]
+  + Class [android/view/View$OnTouchListener]
+  + Class [android/view/Window]
+  + Class [android/widget/ToggleButton]
+  + Class [com/example/android/sip/IncomingCallReceiver]
+  + Class [com/example/android/sip/SipSettings]
+  + Class [com/example/android/sip/WalkieTalkieActivity]
+  + Class [com/example/android/sip/b]
+  + Class [com/example/android/sip/c]
+  + Class [com/example/android/sip/d]
+  + Class [com/example/android/sip/e]
+  + Class [com/example/android/sip/f]
+  + Class [com/example/android/sip/g]
+  + Class [com/example/android/sip/h]
+  + Class [java/lang/Exception]
+  + Class [java/lang/String]
+  + Class [java/lang/StringBuilder]
+  + Class [java/text/ParseException]
+  + Fieldref [com/example/android/sip/WalkieTalkieActivity.a Ljava/lang/String;]
+  + Fieldref [com/example/android/sip/WalkieTalkieActivity.b Landroid/net/sip/SipManager;]
+  + Fieldref [com/example/android/sip/WalkieTalkieActivity.c Landroid/net/sip/SipProfile;]
+  + Fieldref [com/example/android/sip/WalkieTalkieActivity.d Landroid/net/sip/SipAudioCall;]
+  + Fieldref [com/example/android/sip/WalkieTalkieActivity.e Lcom/example/android/sip/IncomingCallReceiver;]
+  + Methodref [android/app/Activity.<init> ()V]
+  + Methodref [android/app/Activity.onCreate (Landroid/os/Bundle;)V]
+  + Methodref [android/app/Activity.onDestroy ()V]
+  + Methodref [android/app/Activity.onStart ()V]
+  + Methodref [android/app/AlertDialog$Builder.<init> (Landroid/content/Context;)V]
+  + Methodref [android/app/AlertDialog$Builder.create ()Landroid/app/AlertDialog;]
+  + Methodref [android/app/AlertDialog$Builder.setMessage (Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;]
+  + Methodref [android/app/AlertDialog$Builder.setNegativeButton (ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;]
+  + Methodref [android/app/AlertDialog$Builder.setPositiveButton (ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;]
+  + Methodref [android/app/AlertDialog$Builder.setTitle (Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;]
+  + Methodref [android/app/AlertDialog$Builder.setView (Landroid/view/View;)Landroid/app/AlertDialog$Builder;]
+  + Methodref [android/app/PendingIntent.getBroadcast (Landroid/content/Context;ILandroid/content/Intent;I)Landroid/app/PendingIntent;]
+  + Methodref [android/content/Intent.<init> ()V]
+  + Methodref [android/content/Intent.<init> (Landroid/content/Context;Ljava/lang/Class;)V]
+  + Methodref [android/content/Intent.setAction (Ljava/lang/String;)Landroid/content/Intent;]
+  + Methodref [android/content/IntentFilter.<init> ()V]
+  + Methodref [android/content/IntentFilter.addAction (Ljava/lang/String;)V]
+  + Methodref [android/net/sip/SipAudioCall.close ()V]
+  + Methodref [android/net/sip/SipAudioCall.endCall ()V]
+  + Methodref [android/net/sip/SipAudioCall.getPeerProfile ()Landroid/net/sip/SipProfile;]
+  + Methodref [android/net/sip/SipAudioCall.isMuted ()Z]
+  + Methodref [android/net/sip/SipAudioCall.toggleMute ()V]
+  + Methodref [android/net/sip/SipManager.close (Ljava/lang/String;)V]
+  + Methodref [android/net/sip/SipManager.makeAudioCall (Ljava/lang/String;Ljava/lang/String;Landroid/net/sip/SipAudioCall$Listener;I)Landroid/net/sip/SipAudioCall;]
+  + Methodref [android/net/sip/SipManager.newInstance (Landroid/content/Context;)Landroid/net/sip/SipManager;]
+  + Methodref [android/net/sip/SipManager.open (Landroid/net/sip/SipProfile;Landroid/app/PendingIntent;Landroid/net/sip/SipRegistrationListener;)V]
+  + Methodref [android/net/sip/SipManager.setRegistrationListener (Ljava/lang/String;Landroid/net/sip/SipRegistrationListener;)V]
+  + Methodref [android/net/sip/SipProfile.getDisplayName ()Ljava/lang/String;]
+  + Methodref [android/net/sip/SipProfile.getSipDomain ()Ljava/lang/String;]
+  + Methodref [android/net/sip/SipProfile.getUriString ()Ljava/lang/String;]
+  + Methodref [android/net/sip/SipProfile.getUserName ()Ljava/lang/String;]
+  + Methodref [android/net/sip/SipProfile$Builder.<init> (Ljava/lang/String;Ljava/lang/String;)V]
+  + Methodref [android/net/sip/SipProfile$Builder.build ()Landroid/net/sip/SipProfile;]
+  + Methodref [android/net/sip/SipProfile$Builder.setPassword (Ljava/lang/String;)Landroid/net/sip/SipProfile$Builder;]
+  + Methodref [android/preference/PreferenceManager.getDefaultSharedPreferences (Landroid/content/Context;)Landroid/content/SharedPreferences;]
+  + Methodref [android/util/Log.d (Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I]
+  + Methodref [android/util/Log.i (Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I]
+  + Methodref [android/view/LayoutInflater.from (Landroid/content/Context;)Landroid/view/LayoutInflater;]
+  + Methodref [android/view/LayoutInflater.inflate (ILandroid/view/ViewGroup;)Landroid/view/View;]
+  + Methodref [android/view/MotionEvent.getAction ()I]
+  + Methodref [android/view/Window.addFlags (I)V]
+  + Methodref [android/widget/ToggleButton.setOnTouchListener (Landroid/view/View$OnTouchListener;)V]
+  + Methodref [com/example/android/sip/IncomingCallReceiver.<init> ()V]
+  + Methodref [com/example/android/sip/WalkieTalkieActivity.a ()V]
+  + Methodref [com/example/android/sip/WalkieTalkieActivity.a (Ljava/lang/String;)V]
+  + Methodref [com/example/android/sip/WalkieTalkieActivity.b ()V]
+  + Methodref [com/example/android/sip/WalkieTalkieActivity.c ()V]
+  + Methodref [com/example/android/sip/WalkieTalkieActivity.e ()V]
+  + Methodref [com/example/android/sip/WalkieTalkieActivity.findViewById (I)Landroid/view/View;]
+  + Methodref [com/example/android/sip/WalkieTalkieActivity.getBaseContext ()Landroid/content/Context;]
+  + Methodref [com/example/android/sip/WalkieTalkieActivity.getWindow ()Landroid/view/Window;]
+  + Methodref [com/example/android/sip/WalkieTalkieActivity.registerReceiver (Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;]
+  + Methodref [com/example/android/sip/WalkieTalkieActivity.runOnUiThread (Ljava/lang/Runnable;)V]
+  + Methodref [com/example/android/sip/WalkieTalkieActivity.setContentView (I)V]
+  + Methodref [com/example/android/sip/WalkieTalkieActivity.showDialog (I)V]
+  + Methodref [com/example/android/sip/WalkieTalkieActivity.startActivity (Landroid/content/Intent;)V]
+  + Methodref [com/example/android/sip/WalkieTalkieActivity.unregisterReceiver (Landroid/content/BroadcastReceiver;)V]
+  + Methodref [com/example/android/sip/b.<init> (Lcom/example/android/sip/WalkieTalkieActivity;)V]
+  + Methodref [com/example/android/sip/c.<init> (Lcom/example/android/sip/WalkieTalkieActivity;)V]
+  + Methodref [com/example/android/sip/d.<init> (Lcom/example/android/sip/WalkieTalkieActivity;Ljava/lang/String;)V]
+  + Methodref [com/example/android/sip/e.<init> (Lcom/example/android/sip/WalkieTalkieActivity;Landroid/view/View;)V]
+  + Methodref [com/example/android/sip/f.<init> (Lcom/example/android/sip/WalkieTalkieActivity;)V]
+  + Methodref [com/example/android/sip/g.<init> (Lcom/example/android/sip/WalkieTalkieActivity;)V]
+  + Methodref [com/example/android/sip/h.<init> (Lcom/example/android/sip/WalkieTalkieActivity;)V]
+  + Methodref [java/lang/Exception.printStackTrace ()V]
+  + Methodref [java/lang/String.length ()I]
+  + Methodref [java/lang/String.valueOf (Ljava/lang/Object;)Ljava/lang/String;]
+  + Methodref [java/lang/StringBuilder.<init> (Ljava/lang/String;)V]
+  + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
+  + Methodref [java/lang/StringBuilder.toString ()Ljava/lang/String;]
+  + InterfaceMethodref [android/content/SharedPreferences.getString (Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;]
+  + InterfaceMethodref [android/view/Menu.add (IIILjava/lang/CharSequence;)Landroid/view/MenuItem;]
+  + InterfaceMethodref [android/view/MenuItem.getItemId ()I]
+  + NameAndType [<init> ()V]
+  + NameAndType [<init> (Landroid/content/Context;)V]
+  + NameAndType [<init> (Landroid/content/Context;Ljava/lang/Class;)V]
+  + NameAndType [<init> (Lcom/example/android/sip/WalkieTalkieActivity;)V]
+  + NameAndType [<init> (Lcom/example/android/sip/WalkieTalkieActivity;Landroid/view/View;)V]
+  + NameAndType [<init> (Lcom/example/android/sip/WalkieTalkieActivity;Ljava/lang/String;)V]
+  + NameAndType [<init> (Ljava/lang/String;)V]
+  + NameAndType [<init> (Ljava/lang/String;Ljava/lang/String;)V]
+  + NameAndType [a ()V]
+  + NameAndType [a (Ljava/lang/String;)V]
+  + NameAndType [a Ljava/lang/String;]
+  + NameAndType [add (IIILjava/lang/CharSequence;)Landroid/view/MenuItem;]
+  + NameAndType [addAction (Ljava/lang/String;)V]
+  + NameAndType [addFlags (I)V]
+  + NameAndType [append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
+  + NameAndType [b ()V]
+  + NameAndType [b Landroid/net/sip/SipManager;]
+  + NameAndType [build ()Landroid/net/sip/SipProfile;]
+  + NameAndType [c ()V]
+  + NameAndType [c Landroid/net/sip/SipProfile;]
+  + NameAndType [close ()V]
+  + NameAndType [close (Ljava/lang/String;)V]
+  + NameAndType [create ()Landroid/app/AlertDialog;]
+  + NameAndType [d (Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I]
+  + NameAndType [d Landroid/net/sip/SipAudioCall;]
+  + NameAndType [e ()V]
+  + NameAndType [e Lcom/example/android/sip/IncomingCallReceiver;]
+  + NameAndType [endCall ()V]
+  + NameAndType [findViewById (I)Landroid/view/View;]
+  + NameAndType [from (Landroid/content/Context;)Landroid/view/LayoutInflater;]
+  + NameAndType [getAction ()I]
+  + NameAndType [getBaseContext ()Landroid/content/Context;]
+  + NameAndType [getBroadcast (Landroid/content/Context;ILandroid/content/Intent;I)Landroid/app/PendingIntent;]
+  + NameAndType [getDefaultSharedPreferences (Landroid/content/Context;)Landroid/content/SharedPreferences;]
+  + NameAndType [getDisplayName ()Ljava/lang/String;]
+  + NameAndType [getItemId ()I]
+  + NameAndType [getPeerProfile ()Landroid/net/sip/SipProfile;]
+  + NameAndType [getSipDomain ()Ljava/lang/String;]
+  + NameAndType [getString (Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;]
+  + NameAndType [getUriString ()Ljava/lang/String;]
+  + NameAndType [getUserName ()Ljava/lang/String;]
+  + NameAndType [getWindow ()Landroid/view/Window;]
+  + NameAndType [i (Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I]
+  + NameAndType [inflate (ILandroid/view/ViewGroup;)Landroid/view/View;]
+  + NameAndType [isMuted ()Z]
+  + NameAndType [length ()I]
+  + NameAndType [makeAudioCall (Ljava/lang/String;Ljava/lang/String;Landroid/net/sip/SipAudioCall$Listener;I)Landroid/net/sip/SipAudioCall;]
+  + NameAndType [newInstance (Landroid/content/Context;)Landroid/net/sip/SipManager;]
+  + NameAndType [onCreate (Landroid/os/Bundle;)V]
+  + NameAndType [onDestroy ()V]
+  + NameAndType [onStart ()V]
+  + NameAndType [open (Landroid/net/sip/SipProfile;Landroid/app/PendingIntent;Landroid/net/sip/SipRegistrationListener;)V]
+  + NameAndType [printStackTrace ()V]
+  + NameAndType [registerReceiver (Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;]
+  + NameAndType [runOnUiThread (Ljava/lang/Runnable;)V]
+  + NameAndType [setAction (Ljava/lang/String;)Landroid/content/Intent;]
+  + NameAndType [setContentView (I)V]
+  + NameAndType [setMessage (Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;]
+  + NameAndType [setNegativeButton (ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;]
+  + NameAndType [setOnTouchListener (Landroid/view/View$OnTouchListener;)V]
+  + NameAndType [setPassword (Ljava/lang/String;)Landroid/net/sip/SipProfile$Builder;]
+  + NameAndType [setPositiveButton (ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;]
+  + NameAndType [setRegistrationListener (Ljava/lang/String;Landroid/net/sip/SipRegistrationListener;)V]
+  + NameAndType [setTitle (Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;]
+  + NameAndType [setView (Landroid/view/View;)Landroid/app/AlertDialog$Builder;]
+  + NameAndType [showDialog (I)V]
+  + NameAndType [startActivity (Landroid/content/Intent;)V]
+  + NameAndType [toString ()Ljava/lang/String;]
+  + NameAndType [toggleMute ()V]
+  + NameAndType [unregisterReceiver (Landroid/content/BroadcastReceiver;)V]
+  + NameAndType [valueOf (Ljava/lang/Object;)Ljava/lang/String;]
+  + Utf8 []
+  + Utf8 [()I]
+  + Utf8 [()Landroid/app/AlertDialog;]
+  + Utf8 [()Landroid/content/Context;]
+  + Utf8 [()Landroid/net/sip/SipProfile;]
+  + Utf8 [()Landroid/view/Window;]
+  + Utf8 [()Ljava/lang/String;]
+  + Utf8 [()V]
+  + Utf8 [()Z]
+  + Utf8 [(I)Landroid/app/Dialog;]
+  + Utf8 [(I)Landroid/view/View;]
+  + Utf8 [(I)V]
+  + Utf8 [(IIILjava/lang/CharSequence;)Landroid/view/MenuItem;]
+  + Utf8 [(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;]
+  + Utf8 [(ILandroid/view/ViewGroup;)Landroid/view/View;]
+  + Utf8 [(Landroid/content/BroadcastReceiver;)V]
+  + Utf8 [(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;]
+  + Utf8 [(Landroid/content/Context;)Landroid/content/SharedPreferences;]
+  + Utf8 [(Landroid/content/Context;)Landroid/net/sip/SipManager;]
+  + Utf8 [(Landroid/content/Context;)Landroid/view/LayoutInflater;]
+  + Utf8 [(Landroid/content/Context;)V]
+  + Utf8 [(Landroid/content/Context;ILandroid/content/Intent;I)Landroid/app/PendingIntent;]
+  + Utf8 [(Landroid/content/Context;Ljava/lang/Class;)V]
+  + Utf8 [(Landroid/content/Intent;)V]
+  + Utf8 [(Landroid/net/sip/SipAudioCall;)V]
+  + Utf8 [(Landroid/net/sip/SipProfile;Landroid/app/PendingIntent;Landroid/net/sip/SipRegistrationListener;)V]
+  + Utf8 [(Landroid/os/Bundle;)V]
+  + Utf8 [(Landroid/view/Menu;)Z]
+  + Utf8 [(Landroid/view/MenuItem;)Z]
+  + Utf8 [(Landroid/view/View$OnTouchListener;)V]
+  + Utf8 [(Landroid/view/View;)Landroid/app/AlertDialog$Builder;]
+  + Utf8 [(Landroid/view/View;Landroid/view/MotionEvent;)Z]
+  + Utf8 [(Lcom/example/android/sip/WalkieTalkieActivity;)V]
+  + Utf8 [(Lcom/example/android/sip/WalkieTalkieActivity;Landroid/view/View;)V]
+  + Utf8 [(Lcom/example/android/sip/WalkieTalkieActivity;Ljava/lang/String;)V]
+  + Utf8 [(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;]
+  + Utf8 [(Ljava/lang/Object;)Ljava/lang/String;]
+  + Utf8 [(Ljava/lang/Runnable;)V]
+  + Utf8 [(Ljava/lang/String;)Landroid/content/Intent;]
+  + Utf8 [(Ljava/lang/String;)Landroid/net/sip/SipProfile$Builder;]
+  + Utf8 [(Ljava/lang/String;)Ljava/lang/StringBuilder;]
+  + Utf8 [(Ljava/lang/String;)V]
+  + Utf8 [(Ljava/lang/String;Landroid/net/sip/SipRegistrationListener;)V]
+  + Utf8 [(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;]
+  + Utf8 [(Ljava/lang/String;Ljava/lang/String;)V]
+  + Utf8 [(Ljava/lang/String;Ljava/lang/String;Landroid/net/sip/SipAudioCall$Listener;I)Landroid/net/sip/SipAudioCall;]
+  + Utf8 [(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I]
+  + Utf8 [<init>]
+  + Utf8 [@]
+  + Utf8 [Call Someone.]
+  + Utf8 [Call someone]
+  + Utf8 [Code]
+  + Utf8 [Connection Error.]
+  + Utf8 [Connection error.]
+  + Utf8 [Edit your SIP Info.]
+  + Utf8 [End Current Call.]
+  + Utf8 [Error ending call.]
+  + Utf8 [Error when trying to close manager.]
+  + Utf8 [Failed to close local profile.]
+  + Utf8 [Landroid/net/sip/SipAudioCall;]
+  + Utf8 [Landroid/net/sip/SipManager;]
+  + Utf8 [Landroid/net/sip/SipProfile;]
+  + Utf8 [Lcom/example/android/sip/IncomingCallReceiver;]
+  + Utf8 [Ljava/lang/String;]
+  + Utf8 [Please update your SIP Account Settings.]
+  + Utf8 [StackMapTable]
+  + Utf8 [WalkieTalkieActivity/InitiateCall]
+  + Utf8 [WalkieTalkieActivity/onDestroy]
+  + Utf8 [WalkieTalkieActivity/onOptionsItemSelected]
+  + Utf8 [a]
+  + Utf8 [add]
+  + Utf8 [addAction]
+  + Utf8 [addFlags]
+  + Utf8 [android.SipDemo.INCOMING_CALL]
+  + Utf8 [android/app/Activity]
+  + Utf8 [android/app/AlertDialog$Builder]
+  + Utf8 [android/app/PendingIntent]
+  + Utf8 [android/content/Intent]
+  + Utf8 [android/content/IntentFilter]
+  + Utf8 [android/content/SharedPreferences]
+  + Utf8 [android/net/sip/SipAudioCall]
+  + Utf8 [android/net/sip/SipException]
+  + Utf8 [android/net/sip/SipManager]
+  + Utf8 [android/net/sip/SipProfile]
+  + Utf8 [android/net/sip/SipProfile$Builder]
+  + Utf8 [android/preference/PreferenceManager]
+  + Utf8 [android/util/Log]
+  + Utf8 [android/view/LayoutInflater]
+  + Utf8 [android/view/Menu]
+  + Utf8 [android/view/MenuItem]
+  + Utf8 [android/view/MotionEvent]
+  + Utf8 [android/view/View$OnTouchListener]
+  + Utf8 [android/view/Window]
+  + Utf8 [android/widget/ToggleButton]
+  + Utf8 [append]
+  + Utf8 [b]
+  + Utf8 [build]
+  + Utf8 [c]
+  + Utf8 [close]
+  + Utf8 [com/example/android/sip/IncomingCallReceiver]
+  + Utf8 [com/example/android/sip/SipSettings]
+  + Utf8 [com/example/android/sip/WalkieTalkieActivity]
+  + Utf8 [com/example/android/sip/b]
+  + Utf8 [com/example/android/sip/c]
+  + Utf8 [com/example/android/sip/d]
+  + Utf8 [com/example/android/sip/e]
+  + Utf8 [com/example/android/sip/f]
+  + Utf8 [com/example/android/sip/g]
+  + Utf8 [com/example/android/sip/h]
+  + Utf8 [create]
+  + Utf8 [d]
+  + Utf8 [domainPref]
+  + Utf8 [e]
+  + Utf8 [endCall]
+  + Utf8 [findViewById]
+  + Utf8 [from]
+  + Utf8 [getAction]
+  + Utf8 [getBaseContext]
+  + Utf8 [getBroadcast]
+  + Utf8 [getDefaultSharedPreferences]
+  + Utf8 [getDisplayName]
+  + Utf8 [getItemId]
+  + Utf8 [getPeerProfile]
+  + Utf8 [getSipDomain]
+  + Utf8 [getString]
+  + Utf8 [getUriString]
+  + Utf8 [getUserName]
+  + Utf8 [getWindow]
+  + Utf8 [i]
+  + Utf8 [inflate]
+  + Utf8 [isMuted]
+  + Utf8 [java/lang/Exception]
+  + Utf8 [java/lang/String]
+  + Utf8 [java/lang/StringBuilder]
+  + Utf8 [java/text/ParseException]
+  + Utf8 [length]
+  + Utf8 [makeAudioCall]
+  + Utf8 [namePref]
+  + Utf8 [newInstance]
+  + Utf8 [onCreate]
+  + Utf8 [onCreateDialog]
+  + Utf8 [onCreateOptionsMenu]
+  + Utf8 [onDestroy]
+  + Utf8 [onOptionsItemSelected]
+  + Utf8 [onStart]
+  + Utf8 [onTouch]
+  + Utf8 [open]
+  + Utf8 [passPref]
+  + Utf8 [printStackTrace]
+  + Utf8 [registerReceiver]
+  + Utf8 [runOnUiThread]
+  + Utf8 [setAction]
+  + Utf8 [setContentView]
+  + Utf8 [setMessage]
+  + Utf8 [setNegativeButton]
+  + Utf8 [setOnTouchListener]
+  + Utf8 [setPassword]
+  + Utf8 [setPositiveButton]
+  + Utf8 [setRegistrationListener]
+  + Utf8 [setTitle]
+  + Utf8 [setView]
+  + Utf8 [showDialog]
+  + Utf8 [startActivity]
+  + Utf8 [toString]
+  + Utf8 [toggleMute]
+  + Utf8 [unregisterReceiver]
+  + Utf8 [valueOf]
+
+Fields (count = 5):
+  + Field:        a Ljava/lang/String;
+    Access flags: 0x1
+      = public java.lang.String a
+  + Field:        b Landroid/net/sip/SipManager;
+    Access flags: 0x1
+      = public android.net.sip.SipManager b
+  + Field:        c Landroid/net/sip/SipProfile;
+    Access flags: 0x1
+      = public android.net.sip.SipProfile c
+  + Field:        d Landroid/net/sip/SipAudioCall;
+    Access flags: 0x1
+      = public android.net.sip.SipAudioCall d
+  + Field:        e Lcom/example/android/sip/IncomingCallReceiver;
+    Access flags: 0x1
+      = public com.example.android.sip.IncomingCallReceiver e
+
+Methods (count = 15):
+  - Method:       <init>()V
+    Access flags: 0x1
+      = public WalkieTalkieActivity()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 25, locals = 1, stack = 2):
+      [0] aload_0 v0
+      [1] invokespecial #64
+        + Methodref [android/app/Activity.<init> ()V]
+      [4] aload_0 v0
+      [5] aconst_null
+      [6] putfield #59
+        + Fieldref [com/example/android/sip/WalkieTalkieActivity.a Ljava/lang/String;]
+      [9] aload_0 v0
+      [10] aconst_null
+      [11] putfield #60
+        + Fieldref [com/example/android/sip/WalkieTalkieActivity.b Landroid/net/sip/SipManager;]
+      [14] aload_0 v0
+      [15] aconst_null
+      [16] putfield #61
+        + Fieldref [com/example/android/sip/WalkieTalkieActivity.c Landroid/net/sip/SipProfile;]
+      [19] aload_0 v0
+      [20] aconst_null
+      [21] putfield #62
+        + Fieldref [com/example/android/sip/WalkieTalkieActivity.d Landroid/net/sip/SipAudioCall;]
+      [24] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       onCreate(Landroid/os/Bundle;)V
+    Access flags: 0x1
+      = public void onCreate(android.os.Bundle)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 76, locals = 4, stack = 3):
+      [0] aload_0 v0
+      [1] aload_1 v1
+      [2] invokespecial #65
+        + Methodref [android/app/Activity.onCreate (Landroid/os/Bundle;)V]
+      [5] aload_0 v0
+      [6] ldc #4
+        + Integer [2130903041]
+      [8] invokevirtual #117
+        + Methodref [com/example/android/sip/WalkieTalkieActivity.setContentView (I)V]
+      [11] aload_0 v0
+      [12] ldc #5
+        + Integer [2131099652]
+      [14] invokevirtual #112
+        + Methodref [com/example/android/sip/WalkieTalkieActivity.findViewById (I)Landroid/view/View;]
+      [17] checkcast #44
+        + Class [android/widget/ToggleButton]
+      [20] astore_2 v2
+      [21] aload_2 v2
+      [22] aload_0 v0
+      [23] invokevirtual #105
+        + Methodref [android/widget/ToggleButton.setOnTouchListener (Landroid/view/View$OnTouchListener;)V]
+      [26] new #29
+        + Class [android/content/IntentFilter]
+      [29] dup
+      [30] invokespecial #79
+        + Methodref [android/content/IntentFilter.<init> ()V]
+      [33] astore_3 v3
+      [34] aload_3 v3
+      [35] ldc #21
+        + String [android.SipDemo.INCOMING_CALL]
+      [37] invokevirtual #80
+        + Methodref [android/content/IntentFilter.addAction (Ljava/lang/String;)V]
+      [40] aload_0 v0
+      [41] new #45
+        + Class [com/example/android/sip/IncomingCallReceiver]
+      [44] dup
+      [45] invokespecial #106
+        + Methodref [com/example/android/sip/IncomingCallReceiver.<init> ()V]
+      [48] putfield #63
+        + Fieldref [com/example/android/sip/WalkieTalkieActivity.e Lcom/example/android/sip/IncomingCallReceiver;]
+      [51] aload_0 v0
+      [52] aload_0 v0
+      [53] getfield #63
+        + Fieldref [com/example/android/sip/WalkieTalkieActivity.e Lcom/example/android/sip/IncomingCallReceiver;]
+      [56] aload_3 v3
+      [57] invokevirtual #115
+        + Methodref [com/example/android/sip/WalkieTalkieActivity.registerReceiver (Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;]
+      [60] pop
+      [61] aload_0 v0
+      [62] invokevirtual #114
+        + Methodref [com/example/android/sip/WalkieTalkieActivity.getWindow ()Landroid/view/Window;]
+      [65] sipush 128
+      [68] invokevirtual #104
+        + Methodref [android/view/Window.addFlags (I)V]
+      [71] aload_0 v0
+      [72] invokevirtual #107
+        + Methodref [com/example/android/sip/WalkieTalkieActivity.a ()V]
+      [75] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       onStart()V
+    Access flags: 0x1
+      = public void onStart()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 9, locals = 1, stack = 1):
+      [0] aload_0 v0
+      [1] invokespecial #67
+        + Methodref [android/app/Activity.onStart ()V]
+      [4] aload_0 v0
+      [5] invokevirtual #107
+        + Methodref [com/example/android/sip/WalkieTalkieActivity.a ()V]
+      [8] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       onDestroy()V
+    Access flags: 0x1
+      = public void onDestroy()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 38, locals = 1, stack = 2):
+      [0] aload_0 v0
+      [1] invokespecial #66
+        + Methodref [android/app/Activity.onDestroy ()V]
+      [4] aload_0 v0
+      [5] getfield #62
+        + Fieldref [com/example/android/sip/WalkieTalkieActivity.d Landroid/net/sip/SipAudioCall;]
+      [8] ifnull +10 (target=18)
+      [11] aload_0 v0
+      [12] getfield #62
+        + Fieldref [com/example/android/sip/WalkieTalkieActivity.d Landroid/net/sip/SipAudioCall;]
+      [15] invokevirtual #81
+        + Methodref [android/net/sip/SipAudioCall.close ()V]
+      [18] aload_0 v0
+      [19] invokevirtual #110
+        + Methodref [com/example/android/sip/WalkieTalkieActivity.c ()V]
+      [22] aload_0 v0
+      [23] getfield #63
+        + Fieldref [com/example/android/sip/WalkieTalkieActivity.e Lcom/example/android/sip/IncomingCallReceiver;]
+      [26] ifnull +11 (target=37)
+      [29] aload_0 v0
+      [30] aload_0 v0
+      [31] getfield #63
+        + Fieldref [com/example/android/sip/WalkieTalkieActivity.e Lcom/example/android/sip/IncomingCallReceiver;]
+      [34] invokevirtual #120
+        + Methodref [com/example/android/sip/WalkieTalkieActivity.unregisterReceiver (Landroid/content/BroadcastReceiver;)V]
+      [37] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 1):
+      + Stack map table attribute (count = 2):
+        - [18] Var: ..., Stack: (empty)
+        - [37] Var: ..., Stack: (empty)
+  + Method:       a()V
+    Access flags: 0x1
+      = public void a()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 20, locals = 1, stack = 2):
+      [0] aload_0 v0
+      [1] getfield #60
+        + Fieldref [com/example/android/sip/WalkieTalkieActivity.b Landroid/net/sip/SipManager;]
+      [4] ifnonnull +11 (target=15)
+      [7] aload_0 v0
+      [8] aload_0 v0
+      [9] invokestatic #88
+        + Methodref [android/net/sip/SipManager.newInstance (Landroid/content/Context;)Landroid/net/sip/SipManager;]
+      [12] putfield #60
+        + Fieldref [com/example/android/sip/WalkieTalkieActivity.b Landroid/net/sip/SipManager;]
+      [15] aload_0 v0
+      [16] invokevirtual #109
+        + Methodref [com/example/android/sip/WalkieTalkieActivity.b ()V]
+      [19] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 1):
+      + Stack map table attribute (count = 1):
+        - [15] Var: ..., Stack: (empty)
+  + Method:       b()V
+    Access flags: 0x1
+      = public void b()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 203, locals = 8, stack = 5):
+      [0] aload_0 v0
+      [1] getfield #60
+        + Fieldref [com/example/android/sip/WalkieTalkieActivity.b Landroid/net/sip/SipManager;]
+      [4] ifnonnull +4 (target=8)
+      [7] return
+      [8] aload_0 v0
+      [9] getfield #61
+        + Fieldref [com/example/android/sip/WalkieTalkieActivity.c Landroid/net/sip/SipProfile;]
+      [12] ifnull +7 (target=19)
+      [15] aload_0 v0
+      [16] invokevirtual #110
+        + Methodref [com/example/android/sip/WalkieTalkieActivity.c ()V]
+      [19] aload_0 v0
+      [20] invokevirtual #113
+        + Methodref [com/example/android/sip/WalkieTalkieActivity.getBaseContext ()Landroid/content/Context;]
+      [23] invokestatic #98
+        + Methodref [android/preference/PreferenceManager.getDefaultSharedPreferences (Landroid/content/Context;)Landroid/content/SharedPreferences;]
+      [26] astore_1 v1
+      [27] aload_1 v1
+      [28] ldc #23
+        + String [namePref]
+      [30] ldc #6
+        + String []
+      [32] invokeinterface #134
+        + InterfaceMethodref [android/content/SharedPreferences.getString (Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;]
+      [37] astore_2 v2
+      [38] aload_1 v1
+      [39] ldc #22
+        + String [domainPref]
+      [41] ldc #6
+        + String []
+      [43] invokeinterface #134
+        + InterfaceMethodref [android/content/SharedPreferences.getString (Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;]
+      [48] astore_3 v3
+      [49] aload_1 v1
+      [50] ldc #24
+        + String [passPref]
+      [52] ldc #6
+        + String []
+      [54] invokeinterface #134
+        + InterfaceMethodref [android/content/SharedPreferences.getString (Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;]
+      [59] astore v4
+      [61] aload_2 v2
+      [62] invokevirtual #129
+        + Methodref [java/lang/String.length ()I]
+      [65] ifeq +18 (target=83)
+      [68] aload_3 v3
+      [69] invokevirtual #129
+        + Methodref [java/lang/String.length ()I]
+      [72] ifeq +11 (target=83)
+      [75] aload v4
+      [77] invokevirtual #129
+        + Methodref [java/lang/String.length ()I]
+      [80] ifne +9 (target=89)
+      [83] aload_0 v0
+      [84] iconst_3
+      [85] invokevirtual #118
+        + Methodref [com/example/android/sip/WalkieTalkieActivity.showDialog (I)V]
+      [88] return
+      [89] new #35
+        + Class [android/net/sip/SipProfile$Builder]
+      [92] dup
+      [93] aload_2 v2
+      [94] aload_3 v3
+      [95] invokespecial #95
+        + Methodref [android/net/sip/SipProfile$Builder.<init> (Ljava/lang/String;Ljava/lang/String;)V]
+      [98] astore v5
+      [100] aload v5
+      [102] aload v4
+      [104] invokevirtual #97
+        + Methodref [android/net/sip/SipProfile$Builder.setPassword (Ljava/lang/String;)Landroid/net/sip/SipProfile$Builder;]
+      [107] pop
+      [108] aload_0 v0
+      [109] aload v5
+      [111] invokevirtual #96
+        + Methodref [android/net/sip/SipProfile$Builder.build ()Landroid/net/sip/SipProfile;]
+      [114] putfield #61
+        + Fieldref [com/example/android/sip/WalkieTalkieActivity.c Landroid/net/sip/SipProfile;]
+      [117] new #28
+        + Class [android/content/Intent]
+      [120] dup
+      [121] invokespecial #76
+        + Methodref [android/content/Intent.<init> ()V]
+      [124] astore v6
+      [126] aload v6
+      [128] ldc #21
+        + String [android.SipDemo.INCOMING_CALL]
+      [130] invokevirtual #78
+        + Methodref [android/content/Intent.setAction (Ljava/lang/String;)Landroid/content/Intent;]
+      [133] pop
+      [134] aload_0 v0
+      [135] iconst_0
+      [136] aload v6
+      [138] iconst_2
+      [139] invokestatic #75
+        + Methodref [android/app/PendingIntent.getBroadcast (Landroid/content/Context;ILandroid/content/Intent;I)Landroid/app/PendingIntent;]
+      [142] astore v7
+      [144] aload_0 v0
+      [145] getfield #60
+        + Fieldref [com/example/android/sip/WalkieTalkieActivity.b Landroid/net/sip/SipManager;]
+      [148] aload_0 v0
+      [149] getfield #61
+        + Fieldref [com/example/android/sip/WalkieTalkieActivity.c Landroid/net/sip/SipProfile;]
+      [152] aload v7
+      [154] aconst_null
+      [155] invokevirtual #89
+        + Methodref [android/net/sip/SipManager.open (Landroid/net/sip/SipProfile;Landroid/app/PendingIntent;Landroid/net/sip/SipRegistrationListener;)V]
+      [158] aload_0 v0
+      [159] getfield #60
+        + Fieldref [com/example/android/sip/WalkieTalkieActivity.b Landroid/net/sip/SipManager;]
+      [162] aload_0 v0
+      [163] getfield #61
+        + Fieldref [com/example/android/sip/WalkieTalkieActivity.c Landroid/net/sip/SipProfile;]
+      [166] invokevirtual #93
+        + Methodref [android/net/sip/SipProfile.getUriString ()Ljava/lang/String;]
+      [169] new #48
+        + Class [com/example/android/sip/b]
+      [172] dup
+      [173] aload_0 v0
+      [174] invokespecial #121
+        + Methodref [com/example/android/sip/b.<init> (Lcom/example/android/sip/WalkieTalkieActivity;)V]
+      [177] invokevirtual #90
+        + Methodref [android/net/sip/SipManager.setRegistrationListener (Ljava/lang/String;Landroid/net/sip/SipRegistrationListener;)V]
+      [180] goto +22 (target=202)
+      [183] astore v5
+      [185] aload_0 v0
+      [186] ldc #10
+        + String [Connection Error.]
+      [188] invokevirtual #108
+        + Methodref [com/example/android/sip/WalkieTalkieActivity.a (Ljava/lang/String;)V]
+      [191] goto +11 (target=202)
+      [194] astore v5
+      [196] aload_0 v0
+      [197] ldc #11
+        + String [Connection error.]
+      [199] invokevirtual #108
+        + Methodref [com/example/android/sip/WalkieTalkieActivity.a (Ljava/lang/String;)V]
+      [202] return
+      Code attribute exceptions (count = 2):
+      - ExceptionInfo (89 -> 180: 183):
+      + Class [java/text/ParseException]
+      - ExceptionInfo (89 -> 180: 194):
+      + Class [android/net/sip/SipException]
+      Code attribute attributes (attribute count = 1):
+      + Stack map table attribute (count = 7):
+        - [8] Var: ..., Stack: (empty)
+        - [19] Var: ..., Stack: (empty)
+        - [83] Var: [a:com/example/android/sip/WalkieTalkieActivity][a:android/content/SharedPreferences][a:java/lang/String][a:java/lang/String][a:java/lang/String], Stack: 
+        - [89] Var: ..., Stack: (empty)
+        - [183] Var: ..., Stack: [a:java/text/ParseException]
+        - [194] Var: ..., Stack: [a:android/net/sip/SipException]
+        - [202] Var: ..., Stack: (empty)
+  + Method:       c()V
+    Access flags: 0x1
+      = public void c()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 43, locals = 2, stack = 3):
+      [0] aload_0 v0
+      [1] getfield #60
+        + Fieldref [com/example/android/sip/WalkieTalkieActivity.b Landroid/net/sip/SipManager;]
+      [4] ifnonnull +4 (target=8)
+      [7] return
+      [8] aload_0 v0
+      [9] getfield #61
+        + Fieldref [com/example/android/sip/WalkieTalkieActivity.c Landroid/net/sip/SipProfile;]
+      [12] ifnull +30 (target=42)
+      [15] aload_0 v0
+      [16] getfield #60
+        + Fieldref [com/example/android/sip/WalkieTalkieActivity.b Landroid/net/sip/SipManager;]
+      [19] aload_0 v0
+      [20] getfield #61
+        + Fieldref [com/example/android/sip/WalkieTalkieActivity.c Landroid/net/sip/SipProfile;]
+      [23] invokevirtual #93
+        + Methodref [android/net/sip/SipProfile.getUriString ()Ljava/lang/String;]
+      [26] invokevirtual #86
+        + Methodref [android/net/sip/SipManager.close (Ljava/lang/String;)V]
+      [29] goto +13 (target=42)
+      [32] astore_1 v1
+      [33] ldc #19
+        + String [WalkieTalkieActivity/onDestroy]
+      [35] ldc #16
+        + String [Failed to close local profile.]
+      [37] aload_1 v1
+      [38] invokestatic #99
+        + Methodref [android/util/Log.d (Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I]
+      [41] pop
+      [42] return
+      Code attribute exceptions (count = 1):
+      - ExceptionInfo (8 -> 29: 32):
+      + Class [java/lang/Exception]
+      Code attribute attributes (attribute count = 1):
+      + Stack map table attribute (count = 3):
+        - [8] Var: ..., Stack: (empty)
+        - [32] Var: ..., Stack: [a:java/lang/Exception]
+        - [42] Var: ..., Stack: (empty)
+  + Method:       d()V
+    Access flags: 0x1
+      = public void d()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 108, locals = 3, stack = 6):
+      [0] aload_0 v0
+      [1] aload_0 v0
+      [2] getfield #59
+        + Fieldref [com/example/android/sip/WalkieTalkieActivity.a Ljava/lang/String;]
+      [5] invokevirtual #108
+        + Methodref [com/example/android/sip/WalkieTalkieActivity.a (Ljava/lang/String;)V]
+      [8] new #49
+        + Class [com/example/android/sip/c]
+      [11] dup
+      [12] aload_0 v0
+      [13] invokespecial #122
+        + Methodref [com/example/android/sip/c.<init> (Lcom/example/android/sip/WalkieTalkieActivity;)V]
+      [16] astore_1 v1
+      [17] aload_0 v0
+      [18] aload_0 v0
+      [19] getfield #60
+        + Fieldref [com/example/android/sip/WalkieTalkieActivity.b Landroid/net/sip/SipManager;]
+      [22] aload_0 v0
+      [23] getfield #61
+        + Fieldref [com/example/android/sip/WalkieTalkieActivity.c Landroid/net/sip/SipProfile;]
+      [26] invokevirtual #93
+        + Methodref [android/net/sip/SipProfile.getUriString ()Ljava/lang/String;]
+      [29] aload_0 v0
+      [30] getfield #59
+        + Fieldref [com/example/android/sip/WalkieTalkieActivity.a Ljava/lang/String;]
+      [33] aload_1 v1
+      [34] bipush 30
+      [36] invokevirtual #87
+        + Methodref [android/net/sip/SipManager.makeAudioCall (Ljava/lang/String;Ljava/lang/String;Landroid/net/sip/SipAudioCall$Listener;I)Landroid/net/sip/SipAudioCall;]
+      [39] putfield #62
+        + Fieldref [com/example/android/sip/WalkieTalkieActivity.d Landroid/net/sip/SipAudioCall;]
+      [42] goto +65 (target=107)
+      [45] astore_1 v1
+      [46] ldc #18
+        + String [WalkieTalkieActivity/InitiateCall]
+      [48] ldc #15
+        + String [Error when trying to close manager.]
+      [50] aload_1 v1
+      [51] invokestatic #100
+        + Methodref [android/util/Log.i (Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I]
+      [54] pop
+      [55] aload_0 v0
+      [56] getfield #61
+        + Fieldref [com/example/android/sip/WalkieTalkieActivity.c Landroid/net/sip/SipProfile;]
+      [59] ifnull +34 (target=93)
+      [62] aload_0 v0
+      [63] getfield #60
+        + Fieldref [com/example/android/sip/WalkieTalkieActivity.b Landroid/net/sip/SipManager;]
+      [66] aload_0 v0
+      [67] getfield #61
+        + Fieldref [com/example/android/sip/WalkieTalkieActivity.c Landroid/net/sip/SipProfile;]
+      [70] invokevirtual #93
+        + Methodref [android/net/sip/SipProfile.getUriString ()Ljava/lang/String;]
+      [73] invokevirtual #86
+        + Methodref [android/net/sip/SipManager.close (Ljava/lang/String;)V]
+      [76] goto +17 (target=93)
+      [79] astore_2 v2
+      [80] ldc #18
+        + String [WalkieTalkieActivity/InitiateCall]
+      [82] ldc #15
+        + String [Error when trying to close manager.]
+      [84] aload_2 v2
+      [85] invokestatic #100
+        + Methodref [android/util/Log.i (Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I]
+      [88] pop
+      [89] aload_2 v2
+      [90] invokevirtual #128
+        + Methodref [java/lang/Exception.printStackTrace ()V]
+      [93] aload_0 v0
+      [94] getfield #62
+        + Fieldref [com/example/android/sip/WalkieTalkieActivity.d Landroid/net/sip/SipAudioCall;]
+      [97] ifnull +10 (target=107)
+      [100] aload_0 v0
+      [101] getfield #62
+        + Fieldref [com/example/android/sip/WalkieTalkieActivity.d Landroid/net/sip/SipAudioCall;]
+      [104] invokevirtual #81
+        + Methodref [android/net/sip/SipAudioCall.close ()V]
+      [107] return
+      Code attribute exceptions (count = 2):
+      - ExceptionInfo (8 -> 42: 45):
+      + Class [java/lang/Exception]
+      - ExceptionInfo (62 -> 76: 79):
+      + Class [java/lang/Exception]
+      Code attribute attributes (attribute count = 1):
+      + Stack map table attribute (count = 4):
+        - [45] Var: ..., Stack: [a:java/lang/Exception]
+        - [79] Var: [a:com/example/android/sip/WalkieTalkieActivity][a:java/lang/Exception], Stack: [a:java/lang/Exception]
+        - [93] Var: ..., Stack: (empty)
+        - [107] Var: -1, Stack: (empty)
+  + Method:       a(Ljava/lang/String;)V
+    Access flags: 0x1
+      = public void a(java.lang.String)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 14, locals = 2, stack = 5):
+      [0] aload_0 v0
+      [1] new #50
+        + Class [com/example/android/sip/d]
+      [4] dup
+      [5] aload_0 v0
+      [6] aload_1 v1
+      [7] invokespecial #123
+        + Methodref [com/example/android/sip/d.<init> (Lcom/example/android/sip/WalkieTalkieActivity;Ljava/lang/String;)V]
+      [10] invokevirtual #116
+        + Methodref [com/example/android/sip/WalkieTalkieActivity.runOnUiThread (Ljava/lang/Runnable;)V]
+      [13] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       a(Landroid/net/sip/SipAudioCall;)V
+    Access flags: 0x1
+      = public void a(android.net.sip.SipAudioCall)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 54, locals = 3, stack = 4):
+      [0] aload_1 v1
+      [1] invokevirtual #83
+        + Methodref [android/net/sip/SipAudioCall.getPeerProfile ()Landroid/net/sip/SipProfile;]
+      [4] invokevirtual #91
+        + Methodref [android/net/sip/SipProfile.getDisplayName ()Ljava/lang/String;]
+      [7] astore_2 v2
+      [8] aload_2 v2
+      [9] ifnonnull +11 (target=20)
+      [12] aload_1 v1
+      [13] invokevirtual #83
+        + Methodref [android/net/sip/SipAudioCall.getPeerProfile ()Landroid/net/sip/SipProfile;]
+      [16] invokevirtual #94
+        + Methodref [android/net/sip/SipProfile.getUserName ()Ljava/lang/String;]
+      [19] astore_2 v2
+      [20] aload_0 v0
+      [21] new #57
+        + Class [java/lang/StringBuilder]
+      [24] dup
+      [25] aload_2 v2
+      [26] invokestatic #130
+        + Methodref [java/lang/String.valueOf (Ljava/lang/Object;)Ljava/lang/String;]
+      [29] invokespecial #131
+        + Methodref [java/lang/StringBuilder.<init> (Ljava/lang/String;)V]
+      [32] ldc #7
+        + String [@]
+      [34] invokevirtual #132
+        + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
+      [37] aload_1 v1
+      [38] invokevirtual #83
+        + Methodref [android/net/sip/SipAudioCall.getPeerProfile ()Landroid/net/sip/SipProfile;]
+      [41] invokevirtual #92
+        + Methodref [android/net/sip/SipProfile.getSipDomain ()Ljava/lang/String;]
+      [44] invokevirtual #132
+        + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
+      [47] invokevirtual #133
+        + Methodref [java/lang/StringBuilder.toString ()Ljava/lang/String;]
+      [50] invokevirtual #108
+        + Methodref [com/example/android/sip/WalkieTalkieActivity.a (Ljava/lang/String;)V]
+      [53] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 1):
+      + Stack map table attribute (count = 1):
+        - [20] Var: ...[a:java/lang/String], Stack: (empty)
+  + Method:       onTouch(Landroid/view/View;Landroid/view/MotionEvent;)Z
+    Access flags: 0x1
+      = public boolean onTouch(android.view.View,android.view.MotionEvent)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 70, locals = 3, stack = 2):
+      [0] aload_0 v0
+      [1] getfield #62
+        + Fieldref [com/example/android/sip/WalkieTalkieActivity.d Landroid/net/sip/SipAudioCall;]
+      [4] ifnonnull +5 (target=9)
+      [7] iconst_0
+      [8] ireturn
+      [9] aload_2 v2
+      [10] invokevirtual #103
+        + Methodref [android/view/MotionEvent.getAction ()I]
+      [13] ifne +30 (target=43)
+      [16] aload_0 v0
+      [17] getfield #62
+        + Fieldref [com/example/android/sip/WalkieTalkieActivity.d Landroid/net/sip/SipAudioCall;]
+      [20] ifnull +23 (target=43)
+      [23] aload_0 v0
+      [24] getfield #62
+        + Fieldref [com/example/android/sip/WalkieTalkieActivity.d Landroid/net/sip/SipAudioCall;]
+      [27] invokevirtual #84
+        + Methodref [android/net/sip/SipAudioCall.isMuted ()Z]
+      [30] ifeq +13 (target=43)
+      [33] aload_0 v0
+      [34] getfield #62
+        + Fieldref [com/example/android/sip/WalkieTalkieActivity.d Landroid/net/sip/SipAudioCall;]
+      [37] invokevirtual #85
+        + Methodref [android/net/sip/SipAudioCall.toggleMute ()V]
+      [40] goto +28 (target=68)
+      [43] aload_2 v2
+      [44] invokevirtual #103
+        + Methodref [android/view/MotionEvent.getAction ()I]
+      [47] iconst_1
+      [48] ificmpne +20 (target=68)
+      [51] aload_0 v0
+      [52] getfield #62
+        + Fieldref [com/example/android/sip/WalkieTalkieActivity.d Landroid/net/sip/SipAudioCall;]
+      [55] invokevirtual #84
+        + Methodref [android/net/sip/SipAudioCall.isMuted ()Z]
+      [58] ifne +10 (target=68)
+      [61] aload_0 v0
+      [62] getfield #62
+        + Fieldref [com/example/android/sip/WalkieTalkieActivity.d Landroid/net/sip/SipAudioCall;]
+      [65] invokevirtual #85
+        + Methodref [android/net/sip/SipAudioCall.toggleMute ()V]
+      [68] iconst_0
+      [69] ireturn
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 1):
+      + Stack map table attribute (count = 3):
+        - [9] Var: ..., Stack: (empty)
+        - [43] Var: ..., Stack: (empty)
+        - [68] Var: ..., Stack: (empty)
+  + Method:       onCreateOptionsMenu(Landroid/view/Menu;)Z
+    Access flags: 0x1
+      = public boolean onCreateOptionsMenu(android.view.Menu)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 38, locals = 2, stack = 5):
+      [0] aload_1 v1
+      [1] iconst_0
+      [2] iconst_1
+      [3] iconst_0
+      [4] ldc #9
+        + String [Call someone]
+      [6] invokeinterface #135
+        + InterfaceMethodref [android/view/Menu.add (IIILjava/lang/CharSequence;)Landroid/view/MenuItem;]
+      [11] pop
+      [12] aload_1 v1
+      [13] iconst_0
+      [14] iconst_2
+      [15] iconst_0
+      [16] ldc #12
+        + String [Edit your SIP Info.]
+      [18] invokeinterface #135
+        + InterfaceMethodref [android/view/Menu.add (IIILjava/lang/CharSequence;)Landroid/view/MenuItem;]
+      [23] pop
+      [24] aload_1 v1
+      [25] iconst_0
+      [26] iconst_4
+      [27] iconst_0
+      [28] ldc #13
+        + String [End Current Call.]
+      [30] invokeinterface #135
+        + InterfaceMethodref [android/view/Menu.add (IIILjava/lang/CharSequence;)Landroid/view/MenuItem;]
+      [35] pop
+      [36] iconst_1
+      [37] ireturn
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       onOptionsItemSelected(Landroid/view/MenuItem;)Z
+    Access flags: 0x1
+      = public boolean onOptionsItemSelected(android.view.MenuItem)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 87, locals = 3, stack = 3):
+      [0] aload_1 v1
+      [1] invokeinterface #136
+        + InterfaceMethodref [android/view/MenuItem.getItemId ()I]
+      [6] tableswitch (4 offsets, default=79) (target=85)
+        1: offset = 30, target = 36
+        2: offset = 38, target = 44
+        3: offset = 79, target = 85
+        4: offset = 45, target = 51
+        default: offset = 79, target = 85
+      [36] aload_0 v0
+      [37] iconst_1
+      [38] invokevirtual #118
+        + Methodref [com/example/android/sip/WalkieTalkieActivity.showDialog (I)V]
+      [41] goto +44 (target=85)
+      [44] aload_0 v0
+      [45] invokevirtual #111
+        + Methodref [com/example/android/sip/WalkieTalkieActivity.e ()V]
+      [48] goto +37 (target=85)
+      [51] aload_0 v0
+      [52] getfield #62
+        + Fieldref [com/example/android/sip/WalkieTalkieActivity.d Landroid/net/sip/SipAudioCall;]
+      [55] ifnull +30 (target=85)
+      [58] aload_0 v0
+      [59] getfield #62
+        + Fieldref [com/example/android/sip/WalkieTalkieActivity.d Landroid/net/sip/SipAudioCall;]
+      [62] invokevirtual #82
+        + Methodref [android/net/sip/SipAudioCall.endCall ()V]
+      [65] goto +13 (target=78)
+      [68] astore_2 v2
+      [69] ldc #20
+        + String [WalkieTalkieActivity/onOptionsItemSelected]
+      [71] ldc #14
+        + String [Error ending call.]
+      [73] aload_2 v2
+      [74] invokestatic #99
+        + Methodref [android/util/Log.d (Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I]
+      [77] pop
+      [78] aload_0 v0
+      [79] getfield #62
+        + Fieldref [com/example/android/sip/WalkieTalkieActivity.d Landroid/net/sip/SipAudioCall;]
+      [82] invokevirtual #81
+        + Methodref [android/net/sip/SipAudioCall.close ()V]
+      [85] iconst_1
+      [86] ireturn
+      Code attribute exceptions (count = 1):
+      - ExceptionInfo (58 -> 65: 68):
+      + Class [android/net/sip/SipException]
+      Code attribute attributes (attribute count = 1):
+      + Stack map table attribute (count = 6):
+        - [36] Var: ..., Stack: (empty)
+        - [44] Var: ..., Stack: (empty)
+        - [51] Var: ..., Stack: (empty)
+        - [68] Var: ..., Stack: [a:android/net/sip/SipException]
+        - [78] Var: ..., Stack: (empty)
+        - [85] Var: ..., Stack: (empty)
+  + Method:       onCreateDialog(I)Landroid/app/Dialog;
+    Access flags: 0x4
+      = protected android.app.Dialog onCreateDialog(int)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 134, locals = 4, stack = 6):
+      [0] iload_1 v1
+      [1] tableswitch (3 offsets, default=131) (target=132)
+        1: offset = 27, target = 28
+        2: offset = 131, target = 132
+        3: offset = 88, target = 89
+        default: offset = 131, target = 132
+      [28] aload_0 v0
+      [29] invokestatic #101
+        + Methodref [android/view/LayoutInflater.from (Landroid/content/Context;)Landroid/view/LayoutInflater;]
+      [32] astore_2 v2
+      [33] aload_2 v2
+      [34] ldc #3
+        + Integer [2130903040]
+      [36] aconst_null
+      [37] invokevirtual #102
+        + Methodref [android/view/LayoutInflater.inflate (ILandroid/view/ViewGroup;)Landroid/view/View;]
+      [40] astore_3 v3
+      [41] new #26
+        + Class [android/app/AlertDialog$Builder]
+      [44] dup
+      [45] aload_0 v0
+      [46] invokespecial #68
+        + Methodref [android/app/AlertDialog$Builder.<init> (Landroid/content/Context;)V]
+      [49] ldc #8
+        + String [Call Someone.]
+      [51] invokevirtual #73
+        + Methodref [android/app/AlertDialog$Builder.setTitle (Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;]
+      [54] aload_3 v3
+      [55] invokevirtual #74
+        + Methodref [android/app/AlertDialog$Builder.setView (Landroid/view/View;)Landroid/app/AlertDialog$Builder;]
+      [58] ldc #2
+        + Integer [17039370]
+      [60] new #51
+        + Class [com/example/android/sip/e]
+      [63] dup
+      [64] aload_0 v0
+      [65] aload_3 v3
+      [66] invokespecial #124
+        + Methodref [com/example/android/sip/e.<init> (Lcom/example/android/sip/WalkieTalkieActivity;Landroid/view/View;)V]
+      [69] invokevirtual #72
+        + Methodref [android/app/AlertDialog$Builder.setPositiveButton (ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;]
+      [72] ldc #1
+        + Integer [17039360]
+      [74] new #52
+        + Class [com/example/android/sip/f]
+      [77] dup
+      [78] aload_0 v0
+      [79] invokespecial #125
+        + Methodref [com/example/android/sip/f.<init> (Lcom/example/android/sip/WalkieTalkieActivity;)V]
+      [82] invokevirtual #71
+        + Methodref [android/app/AlertDialog$Builder.setNegativeButton (ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;]
+      [85] invokevirtual #69
+        + Methodref [android/app/AlertDialog$Builder.create ()Landroid/app/AlertDialog;]
+      [88] areturn
+      [89] new #26
+        + Class [android/app/AlertDialog$Builder]
+      [92] dup
+      [93] aload_0 v0
+      [94] invokespecial #68
+        + Methodref [android/app/AlertDialog$Builder.<init> (Landroid/content/Context;)V]
+      [97] ldc #17
+        + String [Please update your SIP Account Settings.]
+      [99] invokevirtual #70
+        + Methodref [android/app/AlertDialog$Builder.setMessage (Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;]
+      [102] ldc #2
+        + Integer [17039370]
+      [104] new #53
+        + Class [com/example/android/sip/g]
+      [107] dup
+      [108] aload_0 v0
+      [109] invokespecial #126
+        + Methodref [com/example/android/sip/g.<init> (Lcom/example/android/sip/WalkieTalkieActivity;)V]
+      [112] invokevirtual #72
+        + Methodref [android/app/AlertDialog$Builder.setPositiveButton (ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;]
+      [115] ldc #1
+        + Integer [17039360]
+      [117] new #54
+        + Class [com/example/android/sip/h]
+      [120] dup
+      [121] aload_0 v0
+      [122] invokespecial #127
+        + Methodref [com/example/android/sip/h.<init> (Lcom/example/android/sip/WalkieTalkieActivity;)V]
+      [125] invokevirtual #71
+        + Methodref [android/app/AlertDialog$Builder.setNegativeButton (ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;]
+      [128] invokevirtual #69
+        + Methodref [android/app/AlertDialog$Builder.create ()Landroid/app/AlertDialog;]
+      [131] areturn
+      [132] aconst_null
+      [133] areturn
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 1):
+      + Stack map table attribute (count = 3):
+        - [28] Var: ..., Stack: (empty)
+        - [89] Var: ..., Stack: (empty)
+        - [132] Var: ..., Stack: (empty)
+  + Method:       e()V
+    Access flags: 0x1
+      = public void e()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 20, locals = 2, stack = 4):
+      [0] new #28
+        + Class [android/content/Intent]
+      [3] dup
+      [4] aload_0 v0
+      [5] invokevirtual #113
+        + Methodref [com/example/android/sip/WalkieTalkieActivity.getBaseContext ()Landroid/content/Context;]
+      [8] ldc #46
+        + Class [com/example/android/sip/SipSettings]
+      [10] invokespecial #77
+        + Methodref [android/content/Intent.<init> (Landroid/content/Context;Ljava/lang/Class;)V]
+      [13] astore_1 v1
+      [14] aload_0 v0
+      [15] aload_1 v1
+      [16] invokevirtual #119
+        + Methodref [com/example/android/sip/WalkieTalkieActivity.startActivity (Landroid/content/Intent;)V]
+      [19] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+
+Class file attributes (count = 0):
+
+_____________________________________________________________________
++ Program class: com/example/android/sip/b
+  Superclass:    java/lang/Object
+  Major version: 0x32
+  Minor version: 0x0
+  Access flags:  0x20
+    = class com.example.android.sip.b extends java.lang.Object
+
+Interfaces (count = 1):
+  + Class [android/net/sip/SipRegistrationListener]
+
+Constant Pool (count = 33):
+  + String [Ready]
+  + String [Registering with SIP Server...]
+  + String [Registration failed.  Please check settings.]
+  + Class [android/net/sip/SipRegistrationListener]
+  + Class [com/example/android/sip/WalkieTalkieActivity]
+  + Class [com/example/android/sip/b]
+  + Class [java/lang/Object]
+  + Fieldref [com/example/android/sip/b.a Lcom/example/android/sip/WalkieTalkieActivity;]
+  + Methodref [com/example/android/sip/WalkieTalkieActivity.a (Ljava/lang/String;)V]
+  + Methodref [java/lang/Object.<init> ()V]
+  + NameAndType [<init> ()V]
+  + NameAndType [a (Ljava/lang/String;)V]
+  + NameAndType [a Lcom/example/android/sip/WalkieTalkieActivity;]
+  + Utf8 [()V]
+  + Utf8 [(Lcom/example/android/sip/WalkieTalkieActivity;)V]
+  + Utf8 [(Ljava/lang/String;)V]
+  + Utf8 [(Ljava/lang/String;ILjava/lang/String;)V]
+  + Utf8 [(Ljava/lang/String;J)V]
+  + Utf8 [<init>]
+  + Utf8 [Code]
+  + Utf8 [Lcom/example/android/sip/WalkieTalkieActivity;]
+  + Utf8 [Ready]
+  + Utf8 [Registering with SIP Server...]
+  + Utf8 [Registration failed.  Please check settings.]
+  + Utf8 [a]
+  + Utf8 [android/net/sip/SipRegistrationListener]
+  + Utf8 [com/example/android/sip/WalkieTalkieActivity]
+  + Utf8 [com/example/android/sip/b]
+  + Utf8 [java/lang/Object]
+  + Utf8 [onRegistering]
+  + Utf8 [onRegistrationDone]
+  + Utf8 [onRegistrationFailed]
+
+Fields (count = 1):
+  + Field:        a Lcom/example/android/sip/WalkieTalkieActivity;
+    Access flags: 0x1010
+      = final synthetic com.example.android.sip.WalkieTalkieActivity a
+
+Methods (count = 4):
+  - Method:       <init>(Lcom/example/android/sip/WalkieTalkieActivity;)V
+    Access flags: 0x0
+      = b(com.example.android.sip.WalkieTalkieActivity)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 10, locals = 2, stack = 2):
+      [0] aload_0 v0
+      [1] aload_1 v1
+      [2] putfield #8
+        + Fieldref [com/example/android/sip/b.a Lcom/example/android/sip/WalkieTalkieActivity;]
+      [5] aload_0 v0
+      [6] invokespecial #10
+        + Methodref [java/lang/Object.<init> ()V]
+      [9] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       onRegistering(Ljava/lang/String;)V
+    Access flags: 0x1
+      = public void onRegistering(java.lang.String)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 10, locals = 2, stack = 2):
+      [0] aload_0 v0
+      [1] getfield #8
+        + Fieldref [com/example/android/sip/b.a Lcom/example/android/sip/WalkieTalkieActivity;]
+      [4] ldc #2
+        + String [Registering with SIP Server...]
+      [6] invokevirtual #9
+        + Methodref [com/example/android/sip/WalkieTalkieActivity.a (Ljava/lang/String;)V]
+      [9] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       onRegistrationDone(Ljava/lang/String;J)V
+    Access flags: 0x1
+      = public void onRegistrationDone(java.lang.String,long)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 10, locals = 4, stack = 2):
+      [0] aload_0 v0
+      [1] getfield #8
+        + Fieldref [com/example/android/sip/b.a Lcom/example/android/sip/WalkieTalkieActivity;]
+      [4] ldc #1
+        + String [Ready]
+      [6] invokevirtual #9
+        + Methodref [com/example/android/sip/WalkieTalkieActivity.a (Ljava/lang/String;)V]
+      [9] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       onRegistrationFailed(Ljava/lang/String;ILjava/lang/String;)V
+    Access flags: 0x1
+      = public void onRegistrationFailed(java.lang.String,int,java.lang.String)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 10, locals = 4, stack = 2):
+      [0] aload_0 v0
+      [1] getfield #8
+        + Fieldref [com/example/android/sip/b.a Lcom/example/android/sip/WalkieTalkieActivity;]
+      [4] ldc #3
+        + String [Registration failed.  Please check settings.]
+      [6] invokevirtual #9
+        + Methodref [com/example/android/sip/WalkieTalkieActivity.a (Ljava/lang/String;)V]
+      [9] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+
+Class file attributes (count = 0):
+
+_____________________________________________________________________
++ Program class: com/example/android/sip/c
+  Superclass:    android/net/sip/SipAudioCall$Listener
+  Major version: 0x32
+  Minor version: 0x0
+  Access flags:  0x20
+    = class com.example.android.sip.c extends android.net.sip.SipAudioCall$Listener
+
+Interfaces (count = 0):
+
+Constant Pool (count = 39):
+  + String [Ready.]
+  + Class [android/net/sip/SipAudioCall]
+  + Class [android/net/sip/SipAudioCall$Listener]
+  + Class [com/example/android/sip/WalkieTalkieActivity]
+  + Class [com/example/android/sip/c]
+  + Fieldref [com/example/android/sip/c.a Lcom/example/android/sip/WalkieTalkieActivity;]
+  + Methodref [android/net/sip/SipAudioCall.setSpeakerMode (Z)V]
+  + Methodref [android/net/sip/SipAudioCall.startAudio ()V]
+  + Methodref [android/net/sip/SipAudioCall.toggleMute ()V]
+  + Methodref [android/net/sip/SipAudioCall$Listener.<init> ()V]
+  + Methodref [com/example/android/sip/WalkieTalkieActivity.a (Landroid/net/sip/SipAudioCall;)V]
+  + Methodref [com/example/android/sip/WalkieTalkieActivity.a (Ljava/lang/String;)V]
+  + NameAndType [<init> ()V]
+  + NameAndType [a (Landroid/net/sip/SipAudioCall;)V]
+  + NameAndType [a (Ljava/lang/String;)V]
+  + NameAndType [a Lcom/example/android/sip/WalkieTalkieActivity;]
+  + NameAndType [setSpeakerMode (Z)V]
+  + NameAndType [startAudio ()V]
+  + NameAndType [toggleMute ()V]
+  + Utf8 [()V]
+  + Utf8 [(Landroid/net/sip/SipAudioCall;)V]
+  + Utf8 [(Lcom/example/android/sip/WalkieTalkieActivity;)V]
+  + Utf8 [(Ljava/lang/String;)V]
+  + Utf8 [(Z)V]
+  + Utf8 [<init>]
+  + Utf8 [Code]
+  + Utf8 [Lcom/example/android/sip/WalkieTalkieActivity;]
+  + Utf8 [Ready.]
+  + Utf8 [a]
+  + Utf8 [android/net/sip/SipAudioCall]
+  + Utf8 [android/net/sip/SipAudioCall$Listener]
+  + Utf8 [com/example/android/sip/WalkieTalkieActivity]
+  + Utf8 [com/example/android/sip/c]
+  + Utf8 [onCallEnded]
+  + Utf8 [onCallEstablished]
+  + Utf8 [setSpeakerMode]
+  + Utf8 [startAudio]
+  + Utf8 [toggleMute]
+
+Fields (count = 1):
+  + Field:        a Lcom/example/android/sip/WalkieTalkieActivity;
+    Access flags: 0x1010
+      = final synthetic com.example.android.sip.WalkieTalkieActivity a
+
+Methods (count = 3):
+  - Method:       <init>(Lcom/example/android/sip/WalkieTalkieActivity;)V
+    Access flags: 0x0
+      = c(com.example.android.sip.WalkieTalkieActivity)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 10, locals = 2, stack = 2):
+      [0] aload_0 v0
+      [1] aload_1 v1
+      [2] putfield #6
+        + Fieldref [com/example/android/sip/c.a Lcom/example/android/sip/WalkieTalkieActivity;]
+      [5] aload_0 v0
+      [6] invokespecial #10
+        + Methodref [android/net/sip/SipAudioCall$Listener.<init> ()V]
+      [9] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       onCallEstablished(Landroid/net/sip/SipAudioCall;)V
+    Access flags: 0x1
+      = public void onCallEstablished(android.net.sip.SipAudioCall)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 22, locals = 2, stack = 2):
+      [0] aload_1 v1
+      [1] invokevirtual #8
+        + Methodref [android/net/sip/SipAudioCall.startAudio ()V]
+      [4] aload_1 v1
+      [5] iconst_1
+      [6] invokevirtual #7
+        + Methodref [android/net/sip/SipAudioCall.setSpeakerMode (Z)V]
+      [9] aload_1 v1
+      [10] invokevirtual #9
+        + Methodref [android/net/sip/SipAudioCall.toggleMute ()V]
+      [13] aload_0 v0
+      [14] getfield #6
+        + Fieldref [com/example/android/sip/c.a Lcom/example/android/sip/WalkieTalkieActivity;]
+      [17] aload_1 v1
+      [18] invokevirtual #11
+        + Methodref [com/example/android/sip/WalkieTalkieActivity.a (Landroid/net/sip/SipAudioCall;)V]
+      [21] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       onCallEnded(Landroid/net/sip/SipAudioCall;)V
+    Access flags: 0x1
+      = public void onCallEnded(android.net.sip.SipAudioCall)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 10, locals = 2, stack = 2):
+      [0] aload_0 v0
+      [1] getfield #6
+        + Fieldref [com/example/android/sip/c.a Lcom/example/android/sip/WalkieTalkieActivity;]
+      [4] ldc #1
+        + String [Ready.]
+      [6] invokevirtual #12
+        + Methodref [com/example/android/sip/WalkieTalkieActivity.a (Ljava/lang/String;)V]
+      [9] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+
+Class file attributes (count = 0):
+
+_____________________________________________________________________
++ Program class: com/example/android/sip/d
+  Superclass:    java/lang/Object
+  Major version: 0x32
+  Minor version: 0x0
+  Access flags:  0x20
+    = class com.example.android.sip.d extends java.lang.Object
+
+Interfaces (count = 1):
+  + Class [java/lang/Runnable]
+
+Constant Pool (count = 35):
+  + Integer [2131099651]
+  + Class [android/widget/TextView]
+  + Class [com/example/android/sip/WalkieTalkieActivity]
+  + Class [com/example/android/sip/d]
+  + Class [java/lang/Object]
+  + Class [java/lang/Runnable]
+  + Fieldref [com/example/android/sip/d.a Lcom/example/android/sip/WalkieTalkieActivity;]
+  + Fieldref [com/example/android/sip/d.b Ljava/lang/String;]
+  + Methodref [android/widget/TextView.setText (Ljava/lang/CharSequence;)V]
+  + Methodref [com/example/android/sip/WalkieTalkieActivity.findViewById (I)Landroid/view/View;]
+  + Methodref [java/lang/Object.<init> ()V]
+  + NameAndType [<init> ()V]
+  + NameAndType [a Lcom/example/android/sip/WalkieTalkieActivity;]
+  + NameAndType [b Ljava/lang/String;]
+  + NameAndType [findViewById (I)Landroid/view/View;]
+  + NameAndType [setText (Ljava/lang/CharSequence;)V]
+  + Utf8 [()V]
+  + Utf8 [(I)Landroid/view/View;]
+  + Utf8 [(Lcom/example/android/sip/WalkieTalkieActivity;Ljava/lang/String;)V]
+  + Utf8 [(Ljava/lang/CharSequence;)V]
+  + Utf8 [<init>]
+  + Utf8 [Code]
+  + Utf8 [Lcom/example/android/sip/WalkieTalkieActivity;]
+  + Utf8 [Ljava/lang/String;]
+  + Utf8 [a]
+  + Utf8 [android/widget/TextView]
+  + Utf8 [b]
+  + Utf8 [com/example/android/sip/WalkieTalkieActivity]
+  + Utf8 [com/example/android/sip/d]
+  + Utf8 [findViewById]
+  + Utf8 [java/lang/Object]
+  + Utf8 [java/lang/Runnable]
+  + Utf8 [run]
+  + Utf8 [setText]
+
+Fields (count = 2):
+  + Field:        a Lcom/example/android/sip/WalkieTalkieActivity;
+    Access flags: 0x1010
+      = final synthetic com.example.android.sip.WalkieTalkieActivity a
+  + Field:        b Ljava/lang/String;
+    Access flags: 0x1012
+      = private final synthetic java.lang.String b
+
+Methods (count = 2):
+  - Method:       <init>(Lcom/example/android/sip/WalkieTalkieActivity;Ljava/lang/String;)V
+    Access flags: 0x0
+      = d(com.example.android.sip.WalkieTalkieActivity,java.lang.String)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 15, locals = 3, stack = 2):
+      [0] aload_0 v0
+      [1] aload_1 v1
+      [2] putfield #7
+        + Fieldref [com/example/android/sip/d.a Lcom/example/android/sip/WalkieTalkieActivity;]
+      [5] aload_0 v0
+      [6] aload_2 v2
+      [7] putfield #8
+        + Fieldref [com/example/android/sip/d.b Ljava/lang/String;]
+      [10] aload_0 v0
+      [11] invokespecial #11
+        + Methodref [java/lang/Object.<init> ()V]
+      [14] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       run()V
+    Access flags: 0x1
+      = public void run()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 22, locals = 2, stack = 2):
+      [0] aload_0 v0
+      [1] getfield #7
+        + Fieldref [com/example/android/sip/d.a Lcom/example/android/sip/WalkieTalkieActivity;]
+      [4] ldc #1
+        + Integer [2131099651]
+      [6] invokevirtual #10
+        + Methodref [com/example/android/sip/WalkieTalkieActivity.findViewById (I)Landroid/view/View;]
+      [9] checkcast #2
+        + Class [android/widget/TextView]
+      [12] astore_1 v1
+      [13] aload_1 v1
+      [14] aload_0 v0
+      [15] getfield #8
+        + Fieldref [com/example/android/sip/d.b Ljava/lang/String;]
+      [18] invokevirtual #9
+        + Methodref [android/widget/TextView.setText (Ljava/lang/CharSequence;)V]
+      [21] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+
+Class file attributes (count = 0):
+
+_____________________________________________________________________
++ Program class: com/example/android/sip/e
+  Superclass:    java/lang/Object
+  Major version: 0x32
+  Minor version: 0x0
+  Access flags:  0x20
+    = class com.example.android.sip.e extends java.lang.Object
+
+Interfaces (count = 1):
+  + Class [android/content/DialogInterface$OnClickListener]
+
+Constant Pool (count = 50):
+  + Integer [2131099649]
+  + Class [android/content/DialogInterface$OnClickListener]
+  + Class [android/text/Editable]
+  + Class [android/view/View]
+  + Class [android/widget/EditText]
+  + Class [com/example/android/sip/WalkieTalkieActivity]
+  + Class [com/example/android/sip/e]
+  + Class [java/lang/Object]
+  + Fieldref [com/example/android/sip/WalkieTalkieActivity.a Ljava/lang/String;]
+  + Fieldref [com/example/android/sip/e.a Lcom/example/android/sip/WalkieTalkieActivity;]
+  + Fieldref [com/example/android/sip/e.b Landroid/view/View;]
+  + Methodref [android/view/View.findViewById (I)Landroid/view/View;]
+  + Methodref [android/widget/EditText.getText ()Landroid/text/Editable;]
+  + Methodref [com/example/android/sip/WalkieTalkieActivity.d ()V]
+  + Methodref [java/lang/Object.<init> ()V]
+  + InterfaceMethodref [android/text/Editable.toString ()Ljava/lang/String;]
+  + NameAndType [<init> ()V]
+  + NameAndType [a Lcom/example/android/sip/WalkieTalkieActivity;]
+  + NameAndType [a Ljava/lang/String;]
+  + NameAndType [b Landroid/view/View;]
+  + NameAndType [d ()V]
+  + NameAndType [findViewById (I)Landroid/view/View;]
+  + NameAndType [getText ()Landroid/text/Editable;]
+  + NameAndType [toString ()Ljava/lang/String;]
+  + Utf8 [()Landroid/text/Editable;]
+  + Utf8 [()Ljava/lang/String;]
+  + Utf8 [()V]
+  + Utf8 [(I)Landroid/view/View;]
+  + Utf8 [(Landroid/content/DialogInterface;I)V]
+  + Utf8 [(Lcom/example/android/sip/WalkieTalkieActivity;Landroid/view/View;)V]
+  + Utf8 [<init>]
+  + Utf8 [Code]
+  + Utf8 [Landroid/view/View;]
+  + Utf8 [Lcom/example/android/sip/WalkieTalkieActivity;]
+  + Utf8 [Ljava/lang/String;]
+  + Utf8 [a]
+  + Utf8 [android/content/DialogInterface$OnClickListener]
+  + Utf8 [android/text/Editable]
+  + Utf8 [android/view/View]
+  + Utf8 [android/widget/EditText]
+  + Utf8 [b]
+  + Utf8 [com/example/android/sip/WalkieTalkieActivity]
+  + Utf8 [com/example/android/sip/e]
+  + Utf8 [d]
+  + Utf8 [findViewById]
+  + Utf8 [getText]
+  + Utf8 [java/lang/Object]
+  + Utf8 [onClick]
+  + Utf8 [toString]
+
+Fields (count = 2):
+  + Field:        a Lcom/example/android/sip/WalkieTalkieActivity;
+    Access flags: 0x1010
+      = final synthetic com.example.android.sip.WalkieTalkieActivity a
+  + Field:        b Landroid/view/View;
+    Access flags: 0x1012
+      = private final synthetic android.view.View b
+
+Methods (count = 2):
+  - Method:       <init>(Lcom/example/android/sip/WalkieTalkieActivity;Landroid/view/View;)V
+    Access flags: 0x0
+      = e(com.example.android.sip.WalkieTalkieActivity,android.view.View)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 15, locals = 3, stack = 2):
+      [0] aload_0 v0
+      [1] aload_1 v1
+      [2] putfield #10
+        + Fieldref [com/example/android/sip/e.a Lcom/example/android/sip/WalkieTalkieActivity;]
+      [5] aload_0 v0
+      [6] aload_2 v2
+      [7] putfield #11
+        + Fieldref [com/example/android/sip/e.b Landroid/view/View;]
+      [10] aload_0 v0
+      [11] invokespecial #15
+        + Methodref [java/lang/Object.<init> ()V]
+      [14] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       onClick(Landroid/content/DialogInterface;I)V
+    Access flags: 0x1
+      = public void onClick(android.content.DialogInterface,int)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 37, locals = 4, stack = 2):
+      [0] aload_0 v0
+      [1] getfield #11
+        + Fieldref [com/example/android/sip/e.b Landroid/view/View;]
+      [4] ldc #1
+        + Integer [2131099649]
+      [6] invokevirtual #12
+        + Methodref [android/view/View.findViewById (I)Landroid/view/View;]
+      [9] checkcast #5
+        + Class [android/widget/EditText]
+      [12] astore_3 v3
+      [13] aload_0 v0
+      [14] getfield #10
+        + Fieldref [com/example/android/sip/e.a Lcom/example/android/sip/WalkieTalkieActivity;]
+      [17] aload_3 v3
+      [18] invokevirtual #13
+        + Methodref [android/widget/EditText.getText ()Landroid/text/Editable;]
+      [21] invokeinterface #16
+        + InterfaceMethodref [android/text/Editable.toString ()Ljava/lang/String;]
+      [26] putfield #9
+        + Fieldref [com/example/android/sip/WalkieTalkieActivity.a Ljava/lang/String;]
+      [29] aload_0 v0
+      [30] getfield #10
+        + Fieldref [com/example/android/sip/e.a Lcom/example/android/sip/WalkieTalkieActivity;]
+      [33] invokevirtual #14
+        + Methodref [com/example/android/sip/WalkieTalkieActivity.d ()V]
+      [36] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+
+Class file attributes (count = 0):
+
+_____________________________________________________________________
++ Program class: com/example/android/sip/f
+  Superclass:    java/lang/Object
+  Major version: 0x32
+  Minor version: 0x0
+  Access flags:  0x20
+    = class com.example.android.sip.f extends java.lang.Object
+
+Interfaces (count = 1):
+  + Class [android/content/DialogInterface$OnClickListener]
+
+Constant Pool (count = 19):
+  + Class [android/content/DialogInterface$OnClickListener]
+  + Class [com/example/android/sip/f]
+  + Class [java/lang/Object]
+  + Fieldref [com/example/android/sip/f.a Lcom/example/android/sip/WalkieTalkieActivity;]
+  + Methodref [java/lang/Object.<init> ()V]
+  + NameAndType [<init> ()V]
+  + NameAndType [a Lcom/example/android/sip/WalkieTalkieActivity;]
+  + Utf8 [()V]
+  + Utf8 [(Landroid/content/DialogInterface;I)V]
+  + Utf8 [(Lcom/example/android/sip/WalkieTalkieActivity;)V]
+  + Utf8 [<init>]
+  + Utf8 [Code]
+  + Utf8 [Lcom/example/android/sip/WalkieTalkieActivity;]
+  + Utf8 [a]
+  + Utf8 [android/content/DialogInterface$OnClickListener]
+  + Utf8 [com/example/android/sip/f]
+  + Utf8 [java/lang/Object]
+  + Utf8 [onClick]
+
+Fields (count = 1):
+  + Field:        a Lcom/example/android/sip/WalkieTalkieActivity;
+    Access flags: 0x1010
+      = final synthetic com.example.android.sip.WalkieTalkieActivity a
+
+Methods (count = 2):
+  - Method:       <init>(Lcom/example/android/sip/WalkieTalkieActivity;)V
+    Access flags: 0x0
+      = f(com.example.android.sip.WalkieTalkieActivity)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 10, locals = 2, stack = 2):
+      [0] aload_0 v0
+      [1] aload_1 v1
+      [2] putfield #4
+        + Fieldref [com/example/android/sip/f.a Lcom/example/android/sip/WalkieTalkieActivity;]
+      [5] aload_0 v0
+      [6] invokespecial #5
+        + Methodref [java/lang/Object.<init> ()V]
+      [9] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       onClick(Landroid/content/DialogInterface;I)V
+    Access flags: 0x1
+      = public void onClick(android.content.DialogInterface,int)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 1, locals = 3, stack = 0):
+      [0] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+
+Class file attributes (count = 0):
+
+_____________________________________________________________________
++ Program class: com/example/android/sip/g
+  Superclass:    java/lang/Object
+  Major version: 0x32
+  Minor version: 0x0
+  Access flags:  0x20
+    = class com.example.android.sip.g extends java.lang.Object
+
+Interfaces (count = 1):
+  + Class [android/content/DialogInterface$OnClickListener]
+
+Constant Pool (count = 24):
+  + Class [android/content/DialogInterface$OnClickListener]
+  + Class [com/example/android/sip/WalkieTalkieActivity]
+  + Class [com/example/android/sip/g]
+  + Class [java/lang/Object]
+  + Fieldref [com/example/android/sip/g.a Lcom/example/android/sip/WalkieTalkieActivity;]
+  + Methodref [com/example/android/sip/WalkieTalkieActivity.e ()V]
+  + Methodref [java/lang/Object.<init> ()V]
+  + NameAndType [<init> ()V]
+  + NameAndType [a Lcom/example/android/sip/WalkieTalkieActivity;]
+  + NameAndType [e ()V]
+  + Utf8 [()V]
+  + Utf8 [(Landroid/content/DialogInterface;I)V]
+  + Utf8 [(Lcom/example/android/sip/WalkieTalkieActivity;)V]
+  + Utf8 [<init>]
+  + Utf8 [Code]
+  + Utf8 [Lcom/example/android/sip/WalkieTalkieActivity;]
+  + Utf8 [a]
+  + Utf8 [android/content/DialogInterface$OnClickListener]
+  + Utf8 [com/example/android/sip/WalkieTalkieActivity]
+  + Utf8 [com/example/android/sip/g]
+  + Utf8 [e]
+  + Utf8 [java/lang/Object]
+  + Utf8 [onClick]
+
+Fields (count = 1):
+  + Field:        a Lcom/example/android/sip/WalkieTalkieActivity;
+    Access flags: 0x1010
+      = final synthetic com.example.android.sip.WalkieTalkieActivity a
+
+Methods (count = 2):
+  - Method:       <init>(Lcom/example/android/sip/WalkieTalkieActivity;)V
+    Access flags: 0x0
+      = g(com.example.android.sip.WalkieTalkieActivity)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 10, locals = 2, stack = 2):
+      [0] aload_0 v0
+      [1] aload_1 v1
+      [2] putfield #5
+        + Fieldref [com/example/android/sip/g.a Lcom/example/android/sip/WalkieTalkieActivity;]
+      [5] aload_0 v0
+      [6] invokespecial #7
+        + Methodref [java/lang/Object.<init> ()V]
+      [9] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       onClick(Landroid/content/DialogInterface;I)V
+    Access flags: 0x1
+      = public void onClick(android.content.DialogInterface,int)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 8, locals = 3, stack = 1):
+      [0] aload_0 v0
+      [1] getfield #5
+        + Fieldref [com/example/android/sip/g.a Lcom/example/android/sip/WalkieTalkieActivity;]
+      [4] invokevirtual #6
+        + Methodref [com/example/android/sip/WalkieTalkieActivity.e ()V]
+      [7] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+
+Class file attributes (count = 0):
+
+_____________________________________________________________________
++ Program class: com/example/android/sip/h
+  Superclass:    java/lang/Object
+  Major version: 0x32
+  Minor version: 0x0
+  Access flags:  0x20
+    = class com.example.android.sip.h extends java.lang.Object
+
+Interfaces (count = 1):
+  + Class [android/content/DialogInterface$OnClickListener]
+
+Constant Pool (count = 19):
+  + Class [android/content/DialogInterface$OnClickListener]
+  + Class [com/example/android/sip/h]
+  + Class [java/lang/Object]
+  + Fieldref [com/example/android/sip/h.a Lcom/example/android/sip/WalkieTalkieActivity;]
+  + Methodref [java/lang/Object.<init> ()V]
+  + NameAndType [<init> ()V]
+  + NameAndType [a Lcom/example/android/sip/WalkieTalkieActivity;]
+  + Utf8 [()V]
+  + Utf8 [(Landroid/content/DialogInterface;I)V]
+  + Utf8 [(Lcom/example/android/sip/WalkieTalkieActivity;)V]
+  + Utf8 [<init>]
+  + Utf8 [Code]
+  + Utf8 [Lcom/example/android/sip/WalkieTalkieActivity;]
+  + Utf8 [a]
+  + Utf8 [android/content/DialogInterface$OnClickListener]
+  + Utf8 [com/example/android/sip/h]
+  + Utf8 [java/lang/Object]
+  + Utf8 [onClick]
+
+Fields (count = 1):
+  + Field:        a Lcom/example/android/sip/WalkieTalkieActivity;
+    Access flags: 0x1010
+      = final synthetic com.example.android.sip.WalkieTalkieActivity a
+
+Methods (count = 2):
+  - Method:       <init>(Lcom/example/android/sip/WalkieTalkieActivity;)V
+    Access flags: 0x0
+      = h(com.example.android.sip.WalkieTalkieActivity)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 10, locals = 2, stack = 2):
+      [0] aload_0 v0
+      [1] aload_1 v1
+      [2] putfield #4
+        + Fieldref [com/example/android/sip/h.a Lcom/example/android/sip/WalkieTalkieActivity;]
+      [5] aload_0 v0
+      [6] invokespecial #5
+        + Methodref [java/lang/Object.<init> ()V]
+      [9] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       onClick(Landroid/content/DialogInterface;I)V
+    Access flags: 0x1
+      = public void onClick(android.content.DialogInterface,int)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 1, locals = 3, stack = 0):
+      [0] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+
+Class file attributes (count = 0):
+

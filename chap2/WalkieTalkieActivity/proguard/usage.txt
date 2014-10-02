@@ -1,0 +1,13 @@
+com.example.android.sip.BuildConfig
+com.example.android.sip.R
+com.example.android.sip.R$attr
+com.example.android.sip.R$drawable
+com.example.android.sip.R$id
+com.example.android.sip.R$layout
+com.example.android.sip.R$string
+com.example.android.sip.R$xml
+com.example.android.sip.WalkieTalkieActivity:
+    private static final int CALL_ADDRESS
+    private static final int SET_AUTH_INFO
+    private static final int UPDATE_SETTINGS_DIALOG
+    private static final int HANG_UP

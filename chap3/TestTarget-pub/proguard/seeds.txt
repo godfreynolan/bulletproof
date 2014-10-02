@@ -1,0 +1,102 @@
+com.lohan.testtarget.BuildConfig: BuildConfig()
+com.lohan.testtarget.Console: Console()
+com.lohan.testtarget.Main
+com.lohan.testtarget.Main: Main()
+com.lohan.testtarget.R: R()
+com.lohan.testtarget.R$attr: R$attr()
+com.lohan.testtarget.R$drawable: int icon
+com.lohan.testtarget.R$drawable: R$drawable()
+com.lohan.testtarget.R$id: int btnRefresh
+com.lohan.testtarget.R$id: int scrollView1
+com.lohan.testtarget.R$id: int tableLayout1
+com.lohan.testtarget.R$id: int tableRow1
+com.lohan.testtarget.R$id: int textView1
+com.lohan.testtarget.R$id: int trCheckDebuggable
+com.lohan.testtarget.R$id: int trCheckDebuggableReflection
+com.lohan.testtarget.R$id: int trCheckDebuggerConnected
+com.lohan.testtarget.R$id: int trCheckDebuggerConnectedReflection
+com.lohan.testtarget.R$id: int trCheckFileLength
+com.lohan.testtarget.R$id: int trCheckFileLengthReflection
+com.lohan.testtarget.R$id: int trCheckInstallerPackageName
+com.lohan.testtarget.R$id: int trCheckInstallerPackageNameReflection
+com.lohan.testtarget.R$id: int trCheckLastModified
+com.lohan.testtarget.R$id: int trCheckLastModifiedReflection
+com.lohan.testtarget.R$id: int trCheckPMCheckSignatures
+com.lohan.testtarget.R$id: int trCheckPMCheckSignaturesReflection
+com.lohan.testtarget.R$id: int trCheckPMInfoSignature
+com.lohan.testtarget.R$id: int trCheckPMInfoSignatureReflection
+com.lohan.testtarget.R$id: int trCheckTrivialLC1
+com.lohan.testtarget.R$id: int trCheckTrivialLC2
+com.lohan.testtarget.R$id: int trGetApkLastMod
+com.lohan.testtarget.R$id: int trGetApkLength
+com.lohan.testtarget.R$id: int trGetBluetoothMAC
+com.lohan.testtarget.R$id: int trGetDeviceID
+com.lohan.testtarget.R$id: int trGetDeviceIDReflection
+com.lohan.testtarget.R$id: int trGetTime
+com.lohan.testtarget.R$id: int trGetWirelessMAC
+com.lohan.testtarget.R$id: int trInfo
+com.lohan.testtarget.R$id: int trLicenseVerification
+com.lohan.testtarget.R$id: int trRefresh
+com.lohan.testtarget.R$id: int trSimSerial
+com.lohan.testtarget.R$id: int tvInfo
+com.lohan.testtarget.R$id: int tvLicenseVerification
+com.lohan.testtarget.R$id: int txtApkLastMod
+com.lohan.testtarget.R$id: int txtApkLength
+com.lohan.testtarget.R$id: int txtBluetoothMAC
+com.lohan.testtarget.R$id: int txtCheckDebuggable
+com.lohan.testtarget.R$id: int txtCheckDebuggableReflection
+com.lohan.testtarget.R$id: int txtCheckDebuggableReflection_Result
+com.lohan.testtarget.R$id: int txtCheckDebuggable_Result
+com.lohan.testtarget.R$id: int txtCheckDebuggerConnected
+com.lohan.testtarget.R$id: int txtCheckDebuggerConnectedReflection
+com.lohan.testtarget.R$id: int txtCheckDebuggerConnectedReflection_Result
+com.lohan.testtarget.R$id: int txtCheckDebuggerConnected_Result
+com.lohan.testtarget.R$id: int txtCheckFileLength
+com.lohan.testtarget.R$id: int txtCheckFileLengthReflection
+com.lohan.testtarget.R$id: int txtCheckFileLengthReflection_Result
+com.lohan.testtarget.R$id: int txtCheckFileLength_Result
+com.lohan.testtarget.R$id: int txtCheckInstallerPackageName
+com.lohan.testtarget.R$id: int txtCheckInstallerPackageNameReflection
+com.lohan.testtarget.R$id: int txtCheckInstallerPackageNameReflection_Result
+com.lohan.testtarget.R$id: int txtCheckInstallerPackageName_Result
+com.lohan.testtarget.R$id: int txtCheckLastModified
+com.lohan.testtarget.R$id: int txtCheckLastModifiedReflection
+com.lohan.testtarget.R$id: int txtCheckLastModifiedReflection_Result
+com.lohan.testtarget.R$id: int txtCheckLastModified_Result
+com.lohan.testtarget.R$id: int txtCheckPMCheckSignatures
+com.lohan.testtarget.R$id: int txtCheckPMCheckSignaturesReflection
+com.lohan.testtarget.R$id: int txtCheckPMCheckSignaturesReflection_Result
+com.lohan.testtarget.R$id: int txtCheckPMCheckSignatures_Result
+com.lohan.testtarget.R$id: int txtCheckPMInfoSignature
+com.lohan.testtarget.R$id: int txtCheckPMInfoSignatureReflection
+com.lohan.testtarget.R$id: int txtCheckPMInfoSignatureReflection_Result
+com.lohan.testtarget.R$id: int txtCheckPMInfoSignature_Result
+com.lohan.testtarget.R$id: int txtCheckTrivialLC1
+com.lohan.testtarget.R$id: int txtCheckTrivialLC1_Result
+com.lohan.testtarget.R$id: int txtCheckTrivialLC2
+com.lohan.testtarget.R$id: int txtCheckTrivialLC2_Result
+com.lohan.testtarget.R$id: int txtDeviceID
+com.lohan.testtarget.R$id: int txtDeviceIDReflection
+com.lohan.testtarget.R$id: int txtGetApkLastMod
+com.lohan.testtarget.R$id: int txtGetApkLength
+com.lohan.testtarget.R$id: int txtGetBluetoothMAC
+com.lohan.testtarget.R$id: int txtGetDeviceID
+com.lohan.testtarget.R$id: int txtGetDeviceIDReflection
+com.lohan.testtarget.R$id: int txtGetSimSerial
+com.lohan.testtarget.R$id: int txtGetTime
+com.lohan.testtarget.R$id: int txtGetWirelessMAC
+com.lohan.testtarget.R$id: int txtSimSerial
+com.lohan.testtarget.R$id: int txtTime
+com.lohan.testtarget.R$id: int txtWirelessMAC
+com.lohan.testtarget.R$id: R$id()
+com.lohan.testtarget.R$layout: int main
+com.lohan.testtarget.R$layout: R$layout()
+com.lohan.testtarget.R$string: int app_name
+com.lohan.testtarget.R$string: int dex_comp_size
+com.lohan.testtarget.R$string: int dex_crc
+com.lohan.testtarget.R$string: int dex_size
+com.lohan.testtarget.R$string: int hello
+com.lohan.testtarget.R$string: R$string()
+com.lohan.testtarget.TestResult: com.lohan.testtarget.TestResult[] values()
+com.lohan.testtarget.TestResult: com.lohan.testtarget.TestResult valueOf(java.lang.String)
+com.lohan.testtarget.TrivialLicenseCheck: TrivialLicenseCheck()

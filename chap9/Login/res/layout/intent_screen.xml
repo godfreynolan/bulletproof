@@ -1,0 +1,27 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:drawable/editbox_background_normal"
+    android:orientation="vertical">
+
+    
+    <TextView
+        android:id="@+id/usertxt_field"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/username_field" />
+    
+    <TextView
+        android:id="@+id/passtxt_field"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/password_field" />
+    
+    <TextView
+        android:id="@+id/emailtxt_field"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/email_field" />
+    
+</LinearLayout>
+    

@@ -1,0 +1,34 @@
+com.riis.loginexample.BuildConfig: BuildConfig()
+com.riis.loginexample.HomeActivity
+com.riis.loginexample.HomeActivity: HomeActivity()
+com.riis.loginexample.HomeActivity: void signIn(android.view.View)
+com.riis.loginexample.R: R()
+com.riis.loginexample.R$attr: R$attr()
+com.riis.loginexample.R$drawable: int ic_launcher
+com.riis.loginexample.R$drawable: R$drawable()
+com.riis.loginexample.R$id: int buttonCreateAccount
+com.riis.loginexample.R$id: int buttonSignIN
+com.riis.loginexample.R$id: int buttonSignIn
+com.riis.loginexample.R$id: int buttonSignUP
+com.riis.loginexample.R$id: int editTextConfirmPassword
+com.riis.loginexample.R$id: int editTextPassword
+com.riis.loginexample.R$id: int editTextPasswordToLogin
+com.riis.loginexample.R$id: int editTextUserName
+com.riis.loginexample.R$id: int editTextUserNameToLogin
+com.riis.loginexample.R$id: int menu_settings
+com.riis.loginexample.R$id: R$id()
+com.riis.loginexample.R$layout: int login
+com.riis.loginexample.R$layout: int main
+com.riis.loginexample.R$layout: int signup
+com.riis.loginexample.R$layout: R$layout()
+com.riis.loginexample.R$menu: int main
+com.riis.loginexample.R$menu: R$menu()
+com.riis.loginexample.R$string: int app_name
+com.riis.loginexample.R$string: int hello_world
+com.riis.loginexample.R$string: int menu_settings
+com.riis.loginexample.R$string: R$string()
+com.riis.loginexample.R$style: int AppBaseTheme
+com.riis.loginexample.R$style: int AppTheme
+com.riis.loginexample.R$style: R$style()
+com.riis.loginexample.SignUPActivity
+com.riis.loginexample.SignUPActivity: SignUPActivity()

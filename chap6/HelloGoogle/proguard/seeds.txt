@@ -1,0 +1,17 @@
+com.riis.google.BuildConfig: BuildConfig()
+com.riis.google.MainActivity
+com.riis.google.MainActivity: MainActivity()
+com.riis.google.R: R()
+com.riis.google.R$attr: R$attr()
+com.riis.google.R$drawable: int ic_launcher
+com.riis.google.R$drawable: R$drawable()
+com.riis.google.R$id: int buttonUrl
+com.riis.google.R$id: int webView1
+com.riis.google.R$id: R$id()
+com.riis.google.R$layout: int main
+com.riis.google.R$layout: int webview
+com.riis.google.R$layout: R$layout()
+com.riis.google.R$string: int app_name
+com.riis.google.R$string: R$string()
+com.riis.google.WebViewActivity
+com.riis.google.WebViewActivity: WebViewActivity()

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, Main!</string>
+    <string name="app_name">AntiLVL Test Target</string>
+    <string name="dex_crc">883225736</string>
+    <string name="dex_size">23692</string>
+    <string name="dex_comp_size">9891</string>
+</resources>

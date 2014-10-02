@@ -1,0 +1,24 @@
+com.riis.restfulwebservice.BuildConfig: BuildConfig()
+com.riis.restfulwebservice.R: R()
+com.riis.restfulwebservice.R$attr: R$attr()
+com.riis.restfulwebservice.R$drawable: int ic_launcher
+com.riis.restfulwebservice.R$drawable: R$drawable()
+com.riis.restfulwebservice.R$id: int HTTP
+com.riis.restfulwebservice.R$id: int HTTPS
+com.riis.restfulwebservice.R$id: int RelativeLayout1
+com.riis.restfulwebservice.R$id: int TextView1
+com.riis.restfulwebservice.R$id: int api
+com.riis.restfulwebservice.R$id: int apiKey
+com.riis.restfulwebservice.R$id: int output
+com.riis.restfulwebservice.R$id: R$id()
+com.riis.restfulwebservice.R$layout: int rest_ful_webservice
+com.riis.restfulwebservice.R$layout: R$layout()
+com.riis.restfulwebservice.R$string: int app_name
+com.riis.restfulwebservice.R$string: int hello_world
+com.riis.restfulwebservice.R$string: int menu_settings
+com.riis.restfulwebservice.R$string: R$string()
+com.riis.restfulwebservice.R$style: int AppBaseTheme
+com.riis.restfulwebservice.R$style: int AppTheme
+com.riis.restfulwebservice.R$style: R$style()
+com.riis.restfulwebservice.RestFulWebservice
+com.riis.restfulwebservice.RestFulWebservice: RestFulWebservice()

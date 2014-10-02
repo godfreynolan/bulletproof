@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF"
+    android:fillViewport="true" >
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+        
+        <TextView
+            android:id="@+id/apiKey"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/api"
+            android:layout_marginBottom="12dp"
+            android:layout_marginRight="12dp"
+            android:text="API Key:" />
+
+        <EditText
+            android:id="@+id/api"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/apiKey"
+            android:paddingTop="20px"
+            android:text="2ee858dd063ef50e" />
+
+        <TextView
+            android:id="@+id/TextView1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/HTTPS"
+            android:paddingTop="20px"
+            android:text="Server Response: "
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/output"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/TextView1"
+            android:paddingTop="16px"
+            android:text="Fill the API Key field and click either button to get data." />
+
+        <Button
+            android:id="@+id/HTTPS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/HTTP"
+            android:layout_alignBottom="@+id/HTTP"
+            android:layout_marginLeft="14dp"
+            android:layout_toRightOf="@+id/HTTP"
+            android:clickable="true"
+            android:cursorVisible="true"
+            android:paddingTop="10px"
+            android:text="HTTPS" />
+
+        <Button
+            android:id="@+id/HTTP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/api"
+            android:layout_marginLeft="64dp"
+            android:clickable="true"
+            android:cursorVisible="true"
+            android:paddingTop="10px"
+            android:text="HTTP" />
+
+
+
+    </RelativeLayout>
+
+</ScrollView>

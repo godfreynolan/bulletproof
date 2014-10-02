@@ -1,0 +1,30 @@
+com.example.android.sip.BuildConfig: BuildConfig()
+com.example.android.sip.IncomingCallReceiver
+com.example.android.sip.IncomingCallReceiver: IncomingCallReceiver()
+com.example.android.sip.R: R()
+com.example.android.sip.R$attr: R$attr()
+com.example.android.sip.R$drawable: int btn_record
+com.example.android.sip.R$drawable: int btn_speak_normal
+com.example.android.sip.R$drawable: int btn_speak_pressed
+com.example.android.sip.R$drawable: int btn_speak_selected
+com.example.android.sip.R$drawable: int icon
+com.example.android.sip.R$drawable: R$drawable()
+com.example.android.sip.R$id: int calladdress_edit
+com.example.android.sip.R$id: int calladdress_view
+com.example.android.sip.R$id: int mainlayout
+com.example.android.sip.R$id: int pushToTalk
+com.example.android.sip.R$id: int sipLabel
+com.example.android.sip.R$id: R$id()
+com.example.android.sip.R$layout: int call_address_dialog
+com.example.android.sip.R$layout: int walkietalkie
+com.example.android.sip.R$layout: R$layout()
+com.example.android.sip.R$string: int app_name
+com.example.android.sip.R$string: int contactAddress
+com.example.android.sip.R$string: int talk
+com.example.android.sip.R$string: R$string()
+com.example.android.sip.R$xml: int preferences
+com.example.android.sip.R$xml: R$xml()
+com.example.android.sip.SipSettings
+com.example.android.sip.SipSettings: SipSettings()
+com.example.android.sip.WalkieTalkieActivity
+com.example.android.sip.WalkieTalkieActivity: WalkieTalkieActivity()

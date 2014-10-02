@@ -1,0 +1,53 @@
+com.example.android.sip.IncomingCallReceiver -> com.example.android.sip.IncomingCallReceiver:
+    void onReceive(android.content.Context,android.content.Intent) -> onReceive
+com.example.android.sip.IncomingCallReceiver$1 -> com.example.android.sip.a:
+    com.example.android.sip.IncomingCallReceiver this$0 -> a
+    void onRinging(android.net.sip.SipAudioCall,android.net.sip.SipProfile) -> onRinging
+com.example.android.sip.SipSettings -> com.example.android.sip.SipSettings:
+    void onCreate(android.os.Bundle) -> onCreate
+com.example.android.sip.WalkieTalkieActivity -> com.example.android.sip.WalkieTalkieActivity:
+    java.lang.String sipAddress -> a
+    android.net.sip.SipManager manager -> b
+    android.net.sip.SipProfile me -> c
+    android.net.sip.SipAudioCall call -> d
+    com.example.android.sip.IncomingCallReceiver callReceiver -> e
+    void onCreate(android.os.Bundle) -> onCreate
+    void onStart() -> onStart
+    void onDestroy() -> onDestroy
+    void initializeManager() -> a
+    void initializeLocalProfile() -> b
+    void closeLocalProfile() -> c
+    void initiateCall() -> d
+    void updateStatus(java.lang.String) -> a
+    void updateStatus(android.net.sip.SipAudioCall) -> a
+    boolean onTouch(android.view.View,android.view.MotionEvent) -> onTouch
+    boolean onCreateOptionsMenu(android.view.Menu) -> onCreateOptionsMenu
+    boolean onOptionsItemSelected(android.view.MenuItem) -> onOptionsItemSelected
+    android.app.Dialog onCreateDialog(int) -> onCreateDialog
+    void updatePreferences() -> e
+com.example.android.sip.WalkieTalkieActivity$1 -> com.example.android.sip.b:
+    com.example.android.sip.WalkieTalkieActivity this$0 -> a
+    void onRegistering(java.lang.String) -> onRegistering
+    void onRegistrationDone(java.lang.String,long) -> onRegistrationDone
+    void onRegistrationFailed(java.lang.String,int,java.lang.String) -> onRegistrationFailed
+com.example.android.sip.WalkieTalkieActivity$2 -> com.example.android.sip.c:
+    com.example.android.sip.WalkieTalkieActivity this$0 -> a
+    void onCallEstablished(android.net.sip.SipAudioCall) -> onCallEstablished
+    void onCallEnded(android.net.sip.SipAudioCall) -> onCallEnded
+com.example.android.sip.WalkieTalkieActivity$3 -> com.example.android.sip.d:
+    com.example.android.sip.WalkieTalkieActivity this$0 -> a
+    java.lang.String val$status -> b
+    void run() -> run
+com.example.android.sip.WalkieTalkieActivity$4 -> com.example.android.sip.e:
+    com.example.android.sip.WalkieTalkieActivity this$0 -> a
+    android.view.View val$textBoxView -> b
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.example.android.sip.WalkieTalkieActivity$5 -> com.example.android.sip.f:
+    com.example.android.sip.WalkieTalkieActivity this$0 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.example.android.sip.WalkieTalkieActivity$6 -> com.example.android.sip.g:
+    com.example.android.sip.WalkieTalkieActivity this$0 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.example.android.sip.WalkieTalkieActivity$7 -> com.example.android.sip.h:
+    com.example.android.sip.WalkieTalkieActivity this$0 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
