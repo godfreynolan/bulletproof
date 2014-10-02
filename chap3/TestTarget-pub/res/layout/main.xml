@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <ScrollView android:id="@+id/scrollView1" android:layout_height="wrap_content" android:layout_width="match_parent">
+<TableLayout android:shrinkColumns="1" android:layout_height="wrap_content" android:id="@+id/tableLayout1" android:layout_width="match_parent">
+    <TableRow android:layout_height="wrap_content" android:layout_width="match_parent" android:id="@+id/tableRow1">
+        <TextView android:layout_height="wrap_content" android:textColor="#ff0000ff" android:textStyle="bold" android:text="Anti-Cracking" android:id="@+id/textView1" android:layout_width="wrap_content"></TextView>
+    </TableRow>
+    <TableRow android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/trCheckFileLength">
+        <TextView android:layout_height="wrap_content" android:text="File Length: " android:id="@+id/txtCheckFileLength" android:layout_width="wrap_content"></TextView>
+        <TextView android:layout_height="wrap_content" android:text="unknown" android:id="@+id/txtCheckFileLength_Result" android:layout_width="wrap_content"></TextView>
+    </TableRow>
+    <TableRow android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/trCheckFileLengthReflection">
+        <TextView android:layout_height="wrap_content" android:text="  with reflection: " android:id="@+id/txtCheckFileLengthReflection" android:layout_width="wrap_content"></TextView>
+        <TextView android:layout_height="wrap_content" android:text="unknown" android:id="@+id/txtCheckFileLengthReflection_Result" android:layout_width="wrap_content"></TextView>
+    </TableRow>
+    <TableRow android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/trCheckLastModified">
+        <TextView android:layout_height="wrap_content" android:text="Last Modifed: " android:id="@+id/txtCheckLastModified" android:layout_width="wrap_content"></TextView>
+        <TextView android:layout_height="wrap_content" android:text="unknown" android:id="@+id/txtCheckLastModified_Result" android:layout_width="wrap_content"></TextView>
+    </TableRow>
+    <TableRow android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/trCheckLastModifiedReflection">
+        <TextView android:layout_height="wrap_content" android:text="  with reflection: " android:id="@+id/txtCheckLastModifiedReflection" android:layout_width="wrap_content"></TextView>
+        <TextView android:layout_height="wrap_content" android:text="unknown" android:id="@+id/txtCheckLastModifiedReflection_Result" android:layout_width="wrap_content"></TextView>
+    </TableRow>
+    <TableRow android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/trCheckInstallerPackageName">
+        <TextView android:layout_height="wrap_content" android:text="Installer Package: " android:id="@+id/txtCheckInstallerPackageName" android:layout_width="wrap_content"></TextView>
+        <TextView android:layout_height="wrap_content" android:text="unknown" android:id="@+id/txtCheckInstallerPackageName_Result" android:layout_width="wrap_content"></TextView>
+    </TableRow>
+    <TableRow android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/trCheckInstallerPackageNameReflection">
+        <TextView android:layout_height="wrap_content" android:text="  with reflection: " android:id="@+id/txtCheckInstallerPackageNameReflection" android:layout_width="wrap_content"></TextView>
+        <TextView android:layout_height="wrap_content" android:text="unknown" android:id="@+id/txtCheckInstallerPackageNameReflection_Result" android:layout_width="wrap_content"></TextView>
+    </TableRow>
+    <TableRow android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/trCheckPMInfoSignature">
+        <TextView android:layout_height="wrap_content" android:text="PkgMgr Signatures: " android:id="@+id/txtCheckPMInfoSignature" android:layout_width="wrap_content"></TextView>
+        <TextView android:layout_height="wrap_content" android:text="unknown" android:id="@+id/txtCheckPMInfoSignature_Result" android:layout_width="wrap_content"></TextView>
+    </TableRow>
+    <TableRow android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/trCheckPMInfoSignatureReflection">
+        <TextView android:layout_height="wrap_content" android:text="  with reflection: " android:id="@+id/txtCheckPMInfoSignatureReflection" android:layout_width="wrap_content"></TextView>
+        <TextView android:layout_height="wrap_content" android:text="unknown" android:id="@+id/txtCheckPMInfoSignatureReflection_Result" android:layout_width="wrap_content"></TextView>
+    </TableRow>
+    <TableRow android:id="@+id/trCheckPMCheckSignatures" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:layout_width="wrap_content" android:text="PkgMgr.ChkSigs(): " android:layout_height="wrap_content" android:id="@+id/txtCheckPMCheckSignatures"></TextView>
+        <TextView android:layout_width="wrap_content" android:text="unknown" android:layout_height="wrap_content" android:id="@+id/txtCheckPMCheckSignatures_Result"></TextView>
+    </TableRow>
+    <TableRow android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/trCheckPMCheckSignaturesReflection">
+        <TextView android:layout_height="wrap_content" android:text="  with reflection: " android:id="@+id/txtCheckPMCheckSignaturesReflection" android:layout_width="wrap_content"></TextView>
+        <TextView android:layout_height="wrap_content" android:text="unknown" android:id="@+id/txtCheckPMCheckSignaturesReflection_Result" android:layout_width="wrap_content"></TextView>
+    </TableRow>
+    <TableRow android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/trCheckDebuggable">
+        <TextView android:layout_height="wrap_content" android:text="Is Debuggable: " android:id="@+id/txtCheckDebuggable" android:layout_width="wrap_content"></TextView>
+        <TextView android:layout_height="wrap_content" android:text="unknown" android:id="@+id/txtCheckDebuggable_Result" android:layout_width="wrap_content"></TextView>
+    </TableRow>
+    <TableRow android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/trCheckDebuggableReflection">
+        <TextView android:layout_height="wrap_content" android:text="  with reflection: " android:id="@+id/txtCheckDebuggableReflection" android:layout_width="wrap_content"></TextView>
+        <TextView android:layout_height="wrap_content" android:text="unknown" android:id="@+id/txtCheckDebuggableReflection_Result" android:layout_width="wrap_content"></TextView>
+    </TableRow>
+    <TableRow android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/trCheckDebuggerConnected">
+        <TextView android:layout_height="wrap_content" android:text="Debugger Chk: " android:id="@+id/txtCheckDebuggerConnected" android:layout_width="wrap_content"></TextView>
+        <TextView android:layout_height="wrap_content" android:text="unknown" android:id="@+id/txtCheckDebuggerConnected_Result" android:layout_width="wrap_content"></TextView>
+    </TableRow>
+    <TableRow android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/trCheckDebuggerConnectedReflection">
+        <TextView android:layout_height="wrap_content" android:text="  with reflection: " android:id="@+id/txtCheckDebuggerConnectedReflection" android:layout_width="wrap_content"></TextView>
+        <TextView android:layout_height="wrap_content" android:text="unknown" android:id="@+id/txtCheckDebuggerConnectedReflection_Result" android:layout_width="wrap_content"></TextView>
+    </TableRow>
+    <TableRow android:layout_height="wrap_content" android:layout_width="match_parent" android:id="@+id/trLicenseVerification">
+        <TextView android:layout_height="wrap_content" android:textColor="#ff0000ff" android:textStyle="bold" android:text="License Verification" android:id="@+id/tvLicenseVerification" android:layout_width="wrap_content"></TextView>
+    </TableRow>
+    <TableRow android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/trCheckTrivialLC1">
+        <TextView android:layout_height="wrap_content" android:text="Trivial Check 1: " android:id="@+id/txtCheckTrivialLC1" android:layout_width="wrap_content"></TextView>
+        <TextView android:layout_height="wrap_content" android:text="unknown" android:id="@+id/txtCheckTrivialLC1_Result" android:layout_width="wrap_content"></TextView>
+    </TableRow>
+    <TableRow android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/trCheckTrivialLC2">
+        <TextView android:layout_height="wrap_content" android:text="Trivial Check 2: " android:id="@+id/txtCheckTrivialLC2" android:layout_width="wrap_content"></TextView>
+        <TextView android:layout_height="wrap_content" android:text="unknown" android:id="@+id/txtCheckTrivialLC2_Result" android:layout_width="wrap_content"></TextView>
+    </TableRow>
+    <TableRow android:layout_height="wrap_content" android:layout_width="match_parent" android:id="@+id/trInfo">
+        <TextView android:layout_height="wrap_content" android:textColor="#ff0000ff" android:textStyle="bold" android:text="Info" android:id="@+id/tvInfo" android:layout_width="wrap_content"></TextView>
+    </TableRow>
+    <TableRow android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/trGetDeviceID">
+        <TextView android:layout_height="wrap_content" android:text="Device ID: " android:id="@+id/txtGetDeviceID" android:layout_width="wrap_content"></TextView>
+        <TextView android:layout_height="wrap_content" android:text="unknown" android:id="@+id/txtDeviceID" android:layout_width="wrap_content"></TextView>
+    </TableRow>
+    <TableRow android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/trGetDeviceIDReflection">
+        <TextView android:layout_height="wrap_content" android:text="  with reflection: " android:id="@+id/txtGetDeviceIDReflection" android:layout_width="wrap_content"></TextView>
+        <TextView android:layout_height="wrap_content" android:text="unknown" android:id="@+id/txtDeviceIDReflection" android:layout_width="wrap_content"></TextView>
+    </TableRow>
+    <TableRow android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/trSimSerial">
+        <TextView android:layout_height="wrap_content" android:text="SIM Serial: " android:id="@+id/txtGetSimSerial" android:layout_width="wrap_content"></TextView>
+        <TextView android:layout_height="wrap_content" android:text="unknown" android:id="@+id/txtSimSerial" android:layout_width="wrap_content"></TextView>
+    </TableRow>
+    <TableRow android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/trGetWirelessMAC">
+        <TextView android:layout_height="wrap_content" android:text="Wifi MAC: " android:id="@+id/txtGetWirelessMAC" android:layout_width="wrap_content"></TextView>
+        <TextView android:layout_height="wrap_content" android:text="unknown" android:id="@+id/txtWirelessMAC" android:layout_width="wrap_content"></TextView>
+    </TableRow>
+    <TableRow android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/trGetBluetoothMAC">
+        <TextView android:layout_height="wrap_content" android:text="Bluetooth MAC: " android:id="@+id/txtGetBluetoothMAC" android:layout_width="wrap_content"></TextView>
+        <TextView android:layout_height="wrap_content" android:text="unknown" android:id="@+id/txtBluetoothMAC" android:layout_width="wrap_content"></TextView>
+    </TableRow>
+    <TableRow android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/trGetApkLength">
+        <TextView android:layout_height="wrap_content" android:text="Apk Length: " android:id="@+id/txtGetApkLength" android:layout_width="wrap_content"></TextView>
+        <TextView android:layout_height="wrap_content" android:text="unknown" android:id="@+id/txtApkLength" android:layout_width="wrap_content"></TextView>
+    </TableRow>
+    <TableRow android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/trGetApkLastMod">
+        <TextView android:layout_height="wrap_content" android:text="Apk LastMod: " android:id="@+id/txtGetApkLastMod" android:layout_width="wrap_content"></TextView>
+        <TextView android:layout_height="wrap_content" android:text="unknown" android:id="@+id/txtApkLastMod" android:layout_width="wrap_content"></TextView>
+    </TableRow>
+    <TableRow android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/trGetTime">
+        <TextView android:layout_height="wrap_content" android:text="Time: " android:id="@+id/txtGetTime" android:layout_width="wrap_content"></TextView>
+        <TextView android:layout_height="wrap_content" android:text="unknown" android:id="@+id/txtTime" android:layout_width="wrap_content"></TextView>
+    </TableRow>
+    <TableRow android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/trRefresh">
+    	<Button android:text="Refresh" android:id="@+id/btnRefresh" android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
+    </TableRow>
+</TableLayout>
+    </ScrollView>    
+</LinearLayout>
